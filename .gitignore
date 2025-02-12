@@ -7,5 +7,5 @@ practice/**/node_modules
 sails-app/**/node_modules
 db.ts
 index.html
-./front-end/battleship
-./sails-app
+front-end/battleship
+sails-app
