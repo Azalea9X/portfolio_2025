@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { deleteToDo, UpdateToDo } from "../actions/index.js";
 import axios from "axios"; 
 import EditView from "./Edit.jsx"; // Import the EditView component
-import "./../output.css";
-import Task from "./Task";
+import "../output.css";
+import Task from "./Task.jsx";
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);

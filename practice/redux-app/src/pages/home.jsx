@@ -2,8 +2,8 @@ import React, {render, useState, useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { addTodo, deleteToDo, UpdateToDo } from "../actions/index.js";
 import axios from "axios"; 
-import EditView from "./../components/Edit.jsx"; // Import the EditView component
-import Task from "./../components/Task";
+import EditView from "../components/Edit.jsx"; // Import the EditView component
+import Task from "../components/Task.jsx";
 
 const Home = () => {
   const [tasks, setTasks] = useState([]);
