@@ -30,5 +30,5 @@
         sails-app/**/**/**/node_modules
         sails-app/**/**/**/**/node_modules
         full-stack/typescript-graphql-apollo/client-side/client/node_modules
-        front-end/battleship
-        sails-app
+        /front-end/battleship
+        /sails-app
