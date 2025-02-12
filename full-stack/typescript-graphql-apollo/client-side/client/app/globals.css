@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #ffc107;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary-color: #5cabff;
+    --secondary-color: #a2a9b0;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  color: red;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  color: purple;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ============================================
+    Project Styles (Mobile-First)
+    ============================================ */
+
+.projects {
+  margin-top: 0; /* Reset default margin */
+}
+
+.project-card {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+    Grid Styles (Mobile-First)
+    ============================================ */
+
+.grid {
+    display: flex;  /*default to flex for mobile until larger screen*/
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* ============================================
+    Media Queries (Mobile-First Approach)
+    ============================================ */
+
+/* Small devices (sm: breakpoint in Tailwind, ~640px) */
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .projects {
+    /* Adjust for small screens if needed */
+    margin-top: -10rem;
+  }
+}
+
+/* Medium devices (md: breakpoint in Tailwind, ~768px) */
+@media (min-width: 768px)  {
+  .projects {
+    margin-top: -8rem;
+    min-width: 700px !important;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15rem;/* Two columns on medium screens */
+  }
+}
+
+/* Large devices (lg: breakpoint in Tailwind, ~1024px) */
+@media (min-width: 1024px) {
+  .projects {
+    margin-top: -12rem;
+    min-width: 900px !important;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Three columns on larger screens */
+    gap: 12rem; /* Consistent gap */
+  }
+}
+
+/* Extra large devices (xl: breakpoint in Tailwind, ~1280px) */
+@media (min-width: 1280px) {
+  .projects {
+    margin-top: -15rem;
+    min-width: 1100px !important;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns, stays the same */
+        gap: 18rem; /* Consistent gap */
+  }
+}
+
+/* 2XL devices (2xl: breakpoint in Tailwind, ~1536px) */
+@media (min-width: 1536px) {
+  .projects {
+    min-width: 1400px !important;
+    margin-top: -18rem;
+  }
+  .grid {
+    grid-template-columns: repeat(4, 1fr); /* Four columns on very large screens */
+        gap: 22rem; /* Consistent gap */
+  }
+} 
