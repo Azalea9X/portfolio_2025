@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html, body {
+  font-family: 'Roboto', sans-serif; /* Added sans-serif as a fallback */
+}
+
+@font-face {
+  font-family: 'Roboto !important';
+  src: url('./../../../../fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 300 900; /* Supports font-weight between 100 and 900 */
+  font-style: normal; /* Corrected - this should be normal for the regular font */
+  font-display: swap;
+}
+
 
 :root {
   --background: #ffffff;
@@ -22,9 +34,8 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: sans-serif;
-  line-height: 1.6;
-  min-height: 100vh;
+ 
+ 
   text-rendering: optimizeLegibility;
 }
 
@@ -48,6 +59,16 @@ p {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+
+body, html, p, h1, h2, h3, h4, h5, h6, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  transform: translate('0px', '-20% !important');
+}
+
+
 
 /* ============================================
     Project Styles (Mobile-First)
@@ -90,11 +111,7 @@ p {
   h1 {
     font-size: 3rem;
   }
-
-  .projects {
-    /* Adjust for small screens if needed */
-    margin-top: -10rem;
-  }
+ 
 }
 
 /* Medium devices (md: breakpoint in Tailwind, ~768px) */
@@ -108,6 +125,18 @@ p {
     grid-template-columns: repeat(2, 1fr); 
     gap: 15rem;/* Two columns on medium screens */
   }
+
+  
+body{
+  position: relative; 
+  top: -200px !important;
+}
+
+button{
+  position: relative;
+  top: 200px;
+}
+
 }
 
 /* Large devices (lg: breakpoint in Tailwind, ~1024px) */
@@ -119,6 +148,11 @@ p {
   .grid {
     grid-template-columns: repeat(2, 1fr); /* Three columns on larger screens */
     gap: 12rem; /* Consistent gap */
+  }
+
+  body{
+    position: relative;
+    top: -300px;
   }
 }
 
@@ -132,6 +166,10 @@ p {
     grid-template-columns: repeat(3, 1fr); /* Three columns, stays the same */
         gap: 18rem; /* Consistent gap */
   }
+  body{
+    position: relative;
+    top: -300px;
+  }
 }
 
 /* 2XL devices (2xl: breakpoint in Tailwind, ~1536px) */
@@ -144,4 +182,10 @@ p {
     grid-template-columns: repeat(4, 1fr); /* Four columns on very large screens */
         gap: 22rem; /* Consistent gap */
   }
-} 
+  body{
+    position: relative; 
+    top: -300px !important;
+  }
+  
+  
+}
