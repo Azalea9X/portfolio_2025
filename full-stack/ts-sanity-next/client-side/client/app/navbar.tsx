@@ -22,10 +22,11 @@ About
   }
 
   return (<>
+  <nav className="font-extrabold">
     <button type="button" onClick={handleRouterAbout}>
       About
     </button>
-
+    </nav>
 
 </>
   )

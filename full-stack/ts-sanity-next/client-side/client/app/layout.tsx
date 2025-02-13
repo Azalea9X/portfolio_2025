@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
   display: "swap",
 });
+/*Apply Tailwind*/
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,7 +37,8 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} 
-          antialiased`}
+      relative xs:top-[50px]
+          antialiased  ...`}
       >
         {children}
       </body>
