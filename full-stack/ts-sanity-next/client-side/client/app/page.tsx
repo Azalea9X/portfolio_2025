@@ -23,15 +23,15 @@ export default async function Home() {
   return (
     <>
       <Nav />
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <section className="projects">
+      <div className="relative lg:top-[600px]">
+        <main className="">
+          <section className="projects grid lg:grid-cols-2">
             <h1 className="text-4xl font-extrabold">I am Jacob Siegel!</h1>
-            <div className="grid grid-cols-1 gap-[15rem] relative sm:grid-cols-2 lg:grid-cols-3 gap-[20rem]. ">
+            <div className="grid relative  sm: top-[500px] grid-cols-1 md: grid-cols-3 lg: grid-cols-2">
               {projects.map((project: Project) => (
-                <div key={project._id} className="project-card prose prose-md ">
+                <div key={project._id} className="project-card prose prose-md xxs: max-w-[250px !important] lg: min-w-[500px] max-h-[500px]">
                   <h2 className="text-2xl extra-bold">{project.title}</h2>
-                  <PortableText
+                       <PortableText
                     value={project.content}
                     components={{
                       block: {

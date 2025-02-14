@@ -4,7 +4,7 @@ const config = {
     tailwindcss: {},
     autoprefixer: {},
   },
-  sourceMap: false,
+  
   parser: 'postcss-scss',
 };
 

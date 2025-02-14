@@ -3,7 +3,10 @@ import type { Config } from "tailwindcss";
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/admin123/*.{js,ts,jsx,tsx,mdx}",
+    "./app/about/*.{js,ts,jsx,tsx,mdx}",
+    "./app/components/*.{js,ts,jsx,tsx,mdx}",
+    "./app/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -17,6 +20,7 @@ export default {
         heading: ["Inter", "sans-serif"],
       },
       screens: {
+        xxs: "300px", 
         xs: "400px", 
         sm: "640px",
         md: "768px",

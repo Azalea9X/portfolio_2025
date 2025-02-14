@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation'
 
 const Nav = () =>  {
+//alert(window.innerWidth);
   /*<button className="d-none" type="button" onClick={handleDashboardClick}>
 About
 </button>
