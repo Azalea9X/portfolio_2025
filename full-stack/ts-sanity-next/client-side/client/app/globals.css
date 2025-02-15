@@ -172,6 +172,36 @@ button{
 }
 
 /* Medium devices (md: breakpoint in Tailwind, ~768px) */
+@media (min-width: 660px) and (max-width:700px) {
+  .projects {
+    margin-top: -8rem;
+    min-width: 700px !important;
+  }
+  .grid {
+    display: grid;
+ 
+    gap: 5rem;/* Two columns on medium screens */
+  }
+
+  
+body{
+  position: relative; 
+  
+}
+
+button{
+  position: relative;
+  top: 350px;
+
+}
+
+.project-card{
+  transform: translate(5%, 0%) scaley(120%) !important;
+  word-wrap: break-word;
+}
+}
+
+/* Medium devices (md: breakpoint in Tailwind, ~768px) */
 @media (min-width: 768px)  {
   .projects {
     margin-top: -8rem;
@@ -186,7 +216,7 @@ button{
   
 body{
   position: relative; 
-  top: -300px !important;
+  
 }
 
 button{
@@ -211,7 +241,7 @@ button{
 
   body{
     position: relative;
-    top: -850px !important;
+    
   }
 
   button{
@@ -234,7 +264,7 @@ button{
   
   body{
     position: relative;
-    top: -300px;
+    
   }
   .project-card{
     transform: translate(8%, 30%) scaley(120%) !important;

@@ -37,7 +37,11 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} 
-      relative xs:top-[50px]
+      relative xs:top-[50px] sm:top-[100px]
+      md:top-[200px] 
+      lg:top-[320px] left-[-5rem]
+      xl:left-[-7rem]
+      2xl:
           antialiased  ...`}
       >
         {children}

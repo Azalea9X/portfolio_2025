@@ -23,13 +23,25 @@ export default async function Home() {
   return (
     <>
       <Nav />
-      <div className="relative lg:top-[600px]">
+      <div className="relative">
         <main className="">
-          <section className="projects grid lg:grid-cols-2">
-            <h1 className="text-4xl font-extrabold">I am Jacob Siegel!</h1>
-            <div className="grid relative  sm: top-[500px] grid-cols-1 md: grid-cols-3 lg: grid-cols-2">
+          <section className="projects">
+            <h1 className="text-4xl relative font-extrabold
+            xxs: text-2xl max-w-[300px] left-[5rem] top-[2rem]
+            sm: left-[6rem]
+            ">I am Jacob Siegel!</h1>
+            <div className="grid relative
+            xxs:grid-cols-1 top-[8rem] left-[5rem]
+            xs:grid-cols-1
+            sm: grid-cols-1 left-[5.2rem]
+            
+            ">
               {projects.map((project: Project) => (
-                <div key={project._id} className="project-card prose prose-md xxs: max-w-[250px !important] lg: min-w-[500px] max-h-[500px]">
+                <div key={project._id} className="project-card prose prose-md xxs: min-w-[300px] 
+                
+                max-w-[350px] sm:min-w-[550px] max-w-[580px] 
+                
+                lg: min-w-[500px] max-h-[500px]">
                   <h2 className="text-2xl extra-bold">{project.title}</h2>
                        <PortableText
                     value={project.content}
