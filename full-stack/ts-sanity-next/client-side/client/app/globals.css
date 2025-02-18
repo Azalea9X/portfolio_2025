@@ -125,14 +125,10 @@ max-width: 100vh !important;
   
 body{
   position: relative; 
-  top: -500px !important;
+
 
 }
 
-button{
-  position: relative;
-  top: 500px;
-}
 
 .project-card{
   transform: translate(-5%, 0%) scaleX(.9) !important;
@@ -155,26 +151,22 @@ button{
   
 body{
   position: relative; 
-  top: -500px !important;
+
 }
 
-button{
-  position: relative;
-  top: 500px;
-}
 
 .project-card{
   transform: translate(2%, 0%) scaleX(100%) !important;
-  word-wrap: break-word;
+  word-wrap: break-word !important;
 }
 
 
 }
 
 /* Medium devices (md: breakpoint in Tailwind, ~768px) */
-@media (min-width: 660px) and (max-width:700px) {
+@media (min-width: 600px) and (max-width:700px) {
   .projects {
-    margin-top: -8rem;
+
     min-width: 700px !important;
   }
   .grid {
@@ -189,29 +181,30 @@ body{
   
 }
 
-button{
-  position: relative;
-  top: 350px;
-
+.translate{
+  transform: scale(0.6, 1) !important;
 }
 
+
 .project-card{
-  transform: translate(5%, 0%) scaley(120%) !important;
-  word-wrap: break-word;
+  transform: translate(5%, 0%) scaleX(80%) scaley(120%) !important;
+  word-wrap: break-word !important;
 }
 }
 
 /* Medium devices (md: breakpoint in Tailwind, ~768px) */
 @media (min-width: 768px)  {
   .projects {
-    margin-top: -8rem;
-    min-width: 700px !important;
+ 
+min-width: 600px !important; 
+max-width: 800px !important;
   }
+  .project-card
+  {min-width: 250px !important; 
+  max-width: 400px !important;}
   .grid {
     display: grid;
- 
-    gap: 5rem;/* Two columns on medium screens */
-  }
+   }
 
   
 body{
@@ -219,22 +212,23 @@ body{
   
 }
 
-button{
-  position: relative;
-  top: 350px;
 
-}
 
 .project-card{
   transform: translate(-1%, 0%) scaley(120%) !important;
-  word-wrap: break-word;
+  word-wrap: break-word !important;
+}
+
+.translate{
+  transform: translate(13%, -10%)  !important;
 }
 }
+
 
 /* Large devices (lg: breakpoint in Tailwind, ~1024px) */
 @media (min-width: 1024px) {
   .projects {
-    margin-top: -12rem;
+
     min-width: 900px !important;
   }
   
@@ -244,21 +238,19 @@ button{
     
   }
 
-  button{
-    position: relative;
-    top: 900px !important;
-  }
+ 
 
   .project-card{
-    transform: translate(2%, 0%) scaley(120%) !important;
-    word-wrap: break-word;
+
+    word-wrap: break-word !important;
   }
+
 }
 
 /* Extra large devices (xl: breakpoint in Tailwind, ~1280px) */
 @media (min-width: 1200px) {
   .projects {
-    margin-top: -15rem;
+ 
     min-width: 1100px !important;
   }
   
@@ -267,16 +259,21 @@ button{
     
   }
   .project-card{
-    transform: translate(8%, 30%) scaley(120%) !important;
-    word-wrap: break-word;
+
+    word-wrap: break-word !important;
   }
+
+  .translate{
+  transform: translateX(500px, 0px) !important;
+}
+
 }
 
 /* 2XL devices (2xl: breakpoint in Tailwind, ~1536px) */
 @media (min-width: 1536px) {
   .projects {
     min-width: 1400px !important;
-    margin-top: -18rem;
+    
   }
   .grid {
     grid-template-columns: repeat(4, 1fr); /* Four columns on very large screens */
@@ -284,8 +281,24 @@ button{
   }
   body{
     position: relative; 
-    top: -300px !important;
+
   }
-  
-  
+ 
+}
+
+/*Targeting specific translate classes*/
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+  .translate{
+    transform: translate(30%, -10%)  !important;
+  }
+
+  .translateH1{
+    .transform: translate(0%, -20%) !important;
+  }
+}
+
+body, html, :root, {
+  box-sizing: border-box !important;
+  font-size: 16px !important;
 }

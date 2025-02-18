@@ -24,34 +24,43 @@ export default async function Home() {
     <>
       <Nav />
       <div className="relative">
-        <main className="">
+        <main className="max-w-7xl mx-auto p-4">
           <section className="projects">
-            <h1 className="text-4xl relative font-extrabold
-            xxs: text-2xl max-w-[300px] left-[5rem] top-[2rem]
-            sm: left-[6rem]
-            ">I am Jacob Siegel!</h1>
-            <div className="grid relative
-            xxs:grid-cols-1 top-[8rem] left-[5rem]
-            xs:grid-cols-1
-            sm: grid-cols-1 left-[5.2rem]
-            
+            <h1 className="text-4xl relative font-extrabold text-center mb-4
+              xxs:text-2xl
+              sm:text-3xl
+              md:text-4xl
+              lg:text-5xl left-[4rem] top-[-13vh]
+              xl:text-6xl text-center left-[9rem]
+
+            ">Hi! I am Jacob Siegel!</h1>
+            <div className="grid relative grid-cols-1 
+              md:grid-cols-2
+              lg:auto-cols-[minmax(0,2fr)]
+              xl:auto-cols-[minmax(0,2fr)]
+              gap-4
             ">
               {projects.map((project: Project) => (
-                <div key={project._id} className="project-card prose prose-md xxs: min-w-[300px] 
-                
-                max-w-[350px] sm:min-w-[550px] max-w-[580px] 
-                
-                lg: min-w-[500px] max-h-[500px]">
+                <div key={project._id} className="project-card prose prose-md relative 
+                  xxs:left-[10%] top-[3%]
+                  xs:left-[7%] 
+                  sm:left-[250px] top-[6%] translate min-w-[250px] max-w-[300px]
+                  md:left-[12%]
+                  min-w-[250px]
+                  lg:left-[15%] top-[-20%] translate
+                  min-w-[250px]
+                  xl:left-[5rem !important] top-[20%] translate
+                ">
                   <h2 className="text-2xl extra-bold">{project.title}</h2>
-                       <PortableText
+                  <PortableText
                     value={project.content}
                     components={{
                       block: {
                         heading1: ({ children }) => (
-                          <h1 className="text-3xl  font-extrabold">{children}</h1>
+                          <h1 className="text-3xl font-extrabold">{children}</h1>
                         ),
                         heading2: ({ children }) => (
-                          <h2 className="text-2xl  font-extrabold">{children}</h2>
+                          <h2 className="text-2xl font-extrabold">{children}</h2>
                         ),
                         heading3: ({ children }) => (
                           <h3 className="text-xl font-extrabold">{children}</h3>
@@ -66,12 +75,13 @@ export default async function Home() {
                     }}
                   />
                   {project.image && (
-                    <Image src={project.image} 
-                     alt={project.title}
-                     width={300}
-                     height={300}
-                     className="rounded-lg object-cover"
-                     />
+                    <Image src={project.url} 
+                      alt={project.title}
+                      width={300} 
+                      height={300} 
+                      className="rounded-lg object-cover w-full" 
+                      layout="responsive" 
+                    />
                   )}
                 </div>
               ))}

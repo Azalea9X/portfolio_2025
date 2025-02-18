@@ -5,7 +5,7 @@ const config = {
     autoprefixer: {},
   },
   
-  parser: 'postcss-scss',
+  //parser: 'postcss-scss',
 };
 
 export default config;

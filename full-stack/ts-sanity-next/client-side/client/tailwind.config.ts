@@ -1,13 +1,13 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from "tailwindcss";
+
+export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/admin123/*.{js,ts,jsx,tsx,mdx}",
     "./app/about/*.{js,ts,jsx,tsx,mdx}",
     "./app/components/*.{js,ts,jsx,tsx,mdx}",
+    "./app/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/*.{js,ts,jsx,tsx,mdx}",
   ],
-  important: true, // Added this line
+  useImportant: true, 
   theme: {
     extend: {
       colors: {
@@ -23,14 +23,21 @@ module.exports = {
         xxs: "300px",
         xs: "400px",
         sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
-        "3xl": "1920px",
-        "4xl": "2560px",
+        md: "700px",
+        lg: "900px",
+        xl: "1100px",
+        "2xl": "1300px",
+        "3xl": "1500px",
+        "4xl": "1700px",
+        "5xl": "1900px",
+        "6xl": "2100px",
+        "7xl": "2300px",
+        "8xl": "2500px",
+        "9xl": "2700px",
+        "10xl": "2900px",
+        "11xl": "3100px",
       },
     },
   },
   plugins: [],
-}
+} satisfies Config;
