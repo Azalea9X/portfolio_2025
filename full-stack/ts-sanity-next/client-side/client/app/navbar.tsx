@@ -23,7 +23,11 @@ About
   }
 
   return (<>
-<nav className="font-extrabold relative lg:top-[-260px] xl:top-[-260px] left-[8%] text-white bg-black flex justify-left">
+<nav className="font-extrabold relative 
+md:top-[-6.25rem]
+lg:top-[-260px] xl:top-[-260px] left-[8%] text-white bg-black flex justify-left
+2xl:left-[5.6rem]
+">
   <button 
     className="text-2xl py-4 px-8 rounded-lg hover:bg-gray-700 transition duration-300"
     type="button" 

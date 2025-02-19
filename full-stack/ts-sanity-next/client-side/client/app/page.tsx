@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { getProjects } from "./components/schemaTypes/sanity-utils";
 import { v4 as uuidv4 } from "uuid";
@@ -27,29 +26,37 @@ export default async function Home() {
         <main className="max-w-7xl mx-auto p-4">
           <section className="projects">
             <h1 className="text-4xl relative font-extrabold text-center mb-4
-              xxs:text-2xl
-              sm:text-3xl
-              md:text-4xl
-              lg:text-5xl left-[4rem] top-[-13vh]
-              xl:text-6xl text-center left-[9rem]
-
+              xxs:text-2xl left-[-2rem]
+              sm:text-3xl top-[1rem]
+              md:text-4xl top-[.55rem]
+              lg:text-5xl left-[7rem] top-[-12rem]
+              xl:text-6xl text-center left-[11rem]
+              2xl:left-[6rem] top-[-14rem]
+              5xl: text-6xl text-center left-[1rem]
             ">Hi! I am Jacob Siegel!</h1>
-            <div className="grid relative grid-cols-1 
-              md:grid-cols-2
-              lg:auto-cols-[minmax(0,2fr)]
-              xl:auto-cols-[minmax(0,2fr)]
-              gap-4
-            ">
+            <div className="grid relative 
+              xxs:grid-cols-1
+              xs:grid-cols-1
+              sm:grid-cols-1 
+              md:grid-cols-1
+              lg:grid-cols-2  
+              xl:grid-cols-2 gap-4
+              2xl:grid-cols-2 gap-4
+              3xl:grid-cols-2
+              5xl:grid-cols-3   ">
               {projects.map((project: Project) => (
                 <div key={project._id} className="project-card prose prose-md relative 
-                  xxs:left-[10%] top-[3%]
-                  xs:left-[7%] 
-                  sm:left-[250px] top-[6%] translate min-w-[250px] max-w-[300px]
-                  md:left-[12%]
+                  xxs:left-[0%] top-[3%]
+                  xs:left-[0%] 
+                  sm: left-[5rem] top-[6%]  min-w-[31.25rem] max-w-[37.5rem]
+                  md:left-[10rem]  
                   min-w-[250px]
-                  lg:left-[15%] top-[-20%] translate
+                  lg:left-[3rem] top-[-8rem] translate
                   min-w-[250px]
-                  xl:left-[5rem !important] top-[20%] translate
+                  xl:left-[3.5rem] top-[-20%] 
+                  2xl:left-[15.625rem] top-[-10.25rem]
+                  3xl:left-[8rem] top-[-8rem]
+                  5xl:left-[10rem] top-[-8rem] min-w-[37.5rem]
                 ">
                   <h2 className="text-2xl extra-bold">{project.title}</h2>
                   <PortableText

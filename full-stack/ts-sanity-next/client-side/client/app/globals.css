@@ -137,31 +137,39 @@ body{
 
 }
 
-@media (min-width: 500px)  {
+/*For extra small screens */
+@media (min-width: 400px) {
   .projects {
 
-    min-width: 400px !important;
+    min-width: 700px !important;
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 5rem;/* Two columns on medium screens */
+ 
+    gap: 5rem;/* Two columns on extra small screens */
   }
 
   
 body{
   position: relative; 
+  
+}
 
+.translate{
+  transform: translate(0rem, 0rem) scale(1.0) !important;
 }
 
 
 .project-card{
-  transform: translate(2%, 0%) scaleX(100%) !important;
+  transform: translate(5rem, 0%) !important;
   word-wrap: break-word !important;
 }
 
-
+nav{
+  transform: translate(1.3rem, 0rem) !important;
 }
+}
+
 
 /* Medium devices (md: breakpoint in Tailwind, ~768px) */
 @media (min-width: 600px) and (max-width:700px) {
@@ -182,28 +190,36 @@ body{
 }
 
 .translate{
-  transform: scale(0.6, 1) !important;
+  transform: translate(0rem, 0rem) scale(1.0) !important;
 }
 
 
 .project-card{
-  transform: translate(5%, 0%) scaleX(80%) scaley(120%) !important;
+  transform: translate(5rem, 0%) !important;
   word-wrap: break-word !important;
+}
+
+nav{
+  transform: translate(1.3rem, 0rem) !important;
 }
 }
 
 /* Medium devices (md: breakpoint in Tailwind, ~768px) */
-@media (min-width: 768px)  {
+@media (min-width: 700px)  {
   .projects {
  
-min-width: 600px !important; 
-max-width: 800px !important;
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
   .project-card
-  {min-width: 250px !important; 
-  max-width: 400px !important;}
+  {min-width: 33rem !important; 
+  max-width: 36rem !important;
+
+
+}
   .grid {
     display: grid;
+    gap: 5 !important;
    }
 
   
@@ -220,16 +236,18 @@ body{
 }
 
 .translate{
-  transform: translate(13%, -10%)  !important;
+  transform: translate(2rem, -0px) !important;
 }
+
 }
 
 
 /* Large devices (lg: breakpoint in Tailwind, ~1024px) */
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .projects {
 
-    min-width: 900px !important;
+    min-width: 800px !important;
+    max-width: 850px !important;
   }
   
 
@@ -243,15 +261,23 @@ body{
   .project-card{
 
     word-wrap: break-word !important;
+    min-width: 25rem !important; 
+  max-width: 30rem !important;
+
+
+  }
+ 
+  div.grid{
+    gap: 6rem !important;
   }
 
 }
 
 /* Extra large devices (xl: breakpoint in Tailwind, ~1280px) */
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .projects {
  
-    min-width: 1100px !important;
+    min-width: 1000px !important;
   }
   
   body{
@@ -259,33 +285,60 @@ body{
     
   }
   .project-card{
-
+    min-width: 28rem !important; 
+    max-width: 33.25rem !important;
     word-wrap: break-word !important;
   }
 
   .translate{
-  transform: translateX(500px, 0px) !important;
+    transform: translate(0px, 0px) scale(1.0) !important;
+  }
+
+  div.grid{
+    gap: 7rem !important;
+  }
 }
 
-}
-
-/* 2XL devices (2xl: breakpoint in Tailwind, ~1536px) */
-@media (min-width: 1536px) {
+/* 3XL devices (3xl: breakpoint in Tailwind, ~1536px) */
+@media (min-width: 1500px) {
   .projects {
     min-width: 1400px !important;
     
   }
-  .grid {
-    grid-template-columns: repeat(4, 1fr); /* Four columns on very large screens */
-        gap: 22rem; /* Consistent gap */
-  }
+
   body{
     position: relative; 
 
   }
  
+  .project-card{
+    min-width: 30rem !important;
+    max-width: 36rem !important;
+  }
 }
 
+/* 5XL devices (5xl: breakpoint in Tailwind, ~1536px) */
+@media (min-width: 1900px) {
+  .projects {
+    min-width: 1600px !important;
+    
+  }
+
+  body{
+    position: relative; 
+
+  }
+  .project-card{
+    min-width: 33rem !important; 
+    max-width: 40rem !important;
+    word-wrap: break-word !important;
+  }
+
+  div.grid{
+    gap: 8rem !important;
+  }
+ 
+}
 /*Targeting specific translate classes*/
 
 @media screen and (min-width: 900px) and (max-width: 1300px) {
@@ -294,11 +347,15 @@ body{
   }
 
   .translateH1{
-    .transform: translate(0%, -20%) !important;
+    transform: translate(0%, -20%) !important;
   }
 }
 
-body, html, :root, {
+body, html, :root {
   box-sizing: border-box !important;
   font-size: 16px !important;
+}
+
+.regular{
+  transform: translate(0px, 0px) scale(1.0) !important;
 }
