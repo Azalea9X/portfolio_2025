@@ -3,6 +3,8 @@ import { structureTool } from 'sanity/structure'
 import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './schemaTypes/schemaTypes/index';
 
+
+
 export default defineConfig({
   name: 'default',
   apiVersion: '2025-02-14', // Changed to a valid date format
@@ -18,5 +20,6 @@ export default defineConfig({
     types: schemaTypes,
   },
   // Added a new property to define the studio's theme
+ 
 
 })

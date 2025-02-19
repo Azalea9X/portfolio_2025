@@ -15,8 +15,15 @@ const projectQuery = groq`*[_type == "project"] {
     name
   },
   slug,
-  "imageUrl": image.asset->url, // Add image URL to the query
-}   `;
+  "imageUrl": image.asset->url,  // Correct way to get image URL
+  image {  // Make sure you include the whole image object.
+    alt,
+    asset->{
+      _id,
+      url
+    }
+  }
+}`;
 
 export async function getProjects(): Promise<Project[]> {
   try {

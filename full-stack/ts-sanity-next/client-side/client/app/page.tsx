@@ -12,6 +12,7 @@ import project from "./components/schemaTypes/projectSchema";
 import { PortableTextInput } from "sanity";
 import { useEffect } from "react";
 
+
 export default async function Home() {
   const projects: Project[] = await getProjects();
 
@@ -81,15 +82,16 @@ export default async function Home() {
                       },
                     }}
                   />
-                  {project.image && (
-                    <Image src={project.url} 
-                      alt={project.title}
-                      width={300} 
-                      height={300} 
-                      className="rounded-lg object-cover w-full" 
-                      layout="responsive" 
-                    />
-                  )}
+    {project.image && (
+  <Image
+    src={project.image.asset.url}
+    alt={project.title}
+width={400}
+    height={300} 
+    className="rounded-lg object-cover w-full"
+    layout="responsive"
+  />
+)}
                 </div>
               ))}
             </div>
