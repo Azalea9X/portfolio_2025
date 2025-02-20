@@ -297,6 +297,13 @@ body{
   div.grid{
     gap: 7rem !important;
   }
+
+  .scale{
+min-width: 70% !important;
+max-width: 90% !important;
+min-height: 120% !important;
+left: 25% !important;
+  }
 }
 
 /* 3XL devices (3xl: breakpoint in Tailwind, ~1536px) */
@@ -315,7 +322,16 @@ body{
     min-width: 30rem !important;
     max-width: 36rem !important;
   }
+  .scale{
+    min-width: 70% !important;
+    max-width: 90% !important;
+    min-height: 120% !important;
+    left: 25% !important;
+    top: -20% !important;
+      }
+
 }
+
 
 /* 5XL devices (5xl: breakpoint in Tailwind, ~1536px) */
 @media (min-width: 1900px) {
@@ -337,6 +353,13 @@ body{
   div.grid{
     gap: 8rem !important;
   }
+  .scale{
+    min-width: 70% !important;
+    max-width: 90% !important;
+    min-height: 120% !important;
+    left: 25% !important;
+    top: -20% !important;
+      }
  
 }
 /*Targeting specific translate classes*/
