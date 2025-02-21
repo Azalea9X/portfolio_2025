@@ -1,52 +1,50 @@
 'use client'
-
+import {useEffect, useState} from "react"; 
 import { useRouter } from 'next/navigation'
+import { getPages } from './sanity-next-js/schemaTypes/schemaTypes/sanity-utils';
+const Nav = () => {
+  const router = useRouter();
+  const [pages, setPages] = useState([]);
 
-const Nav = () =>  {
+  useEffect(() => {
+    const fetchPages = async () => {
+      try {
+        const pagesData = await getPages();
+        setPages(pagesData);
+      } catch (error) {
+        console.error("Error fetching pages:", error);
+        // Handle error appropriately, e.g., display an error message
+      }
+    };
+
+    fetchPages();
+  }, []);
 alert(window.innerWidth);
-  /*<button className="d-none" type="button" onClick={handleDashboardClick}>
-About
-</button>
+  // Function to navigate to a page based on its slug
+  const handleNavigation = (slug) => {
+    router.push(`/pages/${slug}`);
+  };
 
-<button  className="d-none"  type="button" onClick={handleDashboardClick}>
-About
-</button>
-
-<button  className="d-none" type="button" onClick={handleDashboardClick}>
-About
-</button>*/
-
-  const router = useRouter()
-
-  const handleRouterAbout = () => {
-    router.push('/about')
-  }
-
-  return (<>
-<nav className="font-extrabold relative 
-md:top-[-6.25rem]
-lg:top-[-260px] xl:top-[-260px] left-[8%] text-white bg-black flex justify-left
-2xl:left-[5.6rem]
-">
-  <button 
-    className="text-2xl py-4 px-8 rounded-lg hover:bg-gray-700 transition duration-300"
-    type="button" 
-    onClick={handleRouterAbout}
-    aria-label="Navigate to About page"
-  >
-    About
-  </button>
-  <button 
-    className="text-2xl py-4 px-8 rounded-lg hover:bg-gray-700 transition duration-300 ml-4"
-    type="button" 
-    onClick={() => router.push('/contact')}
-    aria-label="Navigate to Contact page"
-  >
-    Contact
-  </button>
-</nav>
-</>
-  )
-}
-
+  return (
+    <>
+      <nav className="font-extrabold relative 
+        md:top-[-6.25rem]
+        lg:top-[-260px] xl:top-[-260px] left-[8%] text-white bg-black flex justify-left
+        2xl:left-[5.6rem]
+      ">
+        {pages.map((page) => (
+          <button
+            key={page._id}
+            className="text-2xl py-4 px-8 rounded-lg hover:bg-gray-700 transition duration-300"
+            type="button"
+            onClick={() => handleNavigation(page.slug.current)}
+            aria-label={`Navigate to ${page.title} page`}
+          >
+            {page.title}
+          </button>
+        ))}
+      </nav>
+    </>
+  );
+};
 export default Nav; 

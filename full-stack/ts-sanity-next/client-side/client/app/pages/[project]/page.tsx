@@ -1,7 +1,7 @@
-import { getProject } from "@/app/components/schemaTypes/sanity-utils";
+import { getPage } from "@/app/sanity-next-js/schemaTypes/schemaTypes/sanity-utils";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
-
+import Nav from "@/app/navbar";
 type Props = {
   params: {
     project: string;
@@ -22,23 +22,24 @@ type Project = {
 export default async function Project({ params }: Props) {
   try {
     const slug = await params.project;
-    const project = await getProject(slug);
+    const page = await getPage(slug);
 
-    if (!project) {
+    if (!page) {
       throw new Error("Project not found");
     }
 
     return (
       <div className="project-card prose prose-md relative
-                         md:left-[2.8rem]
-                  lg:top-[6rem]
-                  xl:left-[7vw]
-                  2xl: left-[11vw]
-                  3xl: left-[-1vw]
+xs:min-w-[400px] max-w-[450px] 
+left-[-3vw]
+sm: left:-[1vw]
+
+
       ">
-        <h2 className="text-2xl extra-bold">{project.title}</h2>
+        <Nav />
+        <h2 className="text-2xl extra-bold">{page.title}</h2>
         <PortableText
-          value={project.content}
+          value={page.content}
           components={{
             block: {
               heading1: ({ children }) => (
@@ -60,10 +61,10 @@ export default async function Project({ params }: Props) {
           }}
         />
 
-        {project.image && (
+        {page.image && (
           <Image
-            src={project.image.asset.url}
-            alt={project.title}
+            src={page.image.asset.url}
+            alt={page.title}
             width={500}
             height={300}
             className="rounded-lg object-cover w-full images"

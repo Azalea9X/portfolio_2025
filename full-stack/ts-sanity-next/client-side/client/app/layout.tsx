@@ -13,8 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
   display: "swap",
 });
-/*Apply Tailwind*/
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,24 +25,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
-        
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} 
-      relative xs:top-[50px] sm:top-[100px]
-      md:top-[200px] 
-      lg:top-[320px] left-[-5rem]
-      xl:left-[-7rem]
-      2xl:
-          antialiased  ...`}
-      >
-        {children}
+      <body className="font-sans antialiased bg-gray-100 text-gray-900">
+        <div className="relative min-h-screen "> {/* added for layout */}
+          <main className="relative ">
+            {children}
+          </main>
+          {/* Optional: Add a footer here if needed */}
+          {/* <footer className="bg-gray-200 py-4 text-center">
+            &copy; 2024 My App
+          </footer> */}
+        </div>
       </body>
     </html>
   );

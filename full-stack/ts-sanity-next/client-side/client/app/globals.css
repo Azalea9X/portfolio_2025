@@ -156,7 +156,7 @@ body{
 }
 
 .translate{
-  transform: translate(0rem, 0rem) scale(1.0) !important;
+  transform: translate(-5rem, 0rem) scale(1.0) !important;
 }
 
 
@@ -267,10 +267,11 @@ body{
 
   }
  
-  div.grid{
-    gap: 6rem !important;
-  }
+.grid-cols-1{
+  gap: 5rem !important;
+  grid-template-columns: repeat(2, 1fr) !important;
 
+}
 }
 
 /* Extra large devices (xl: breakpoint in Tailwind, ~1280px) */
