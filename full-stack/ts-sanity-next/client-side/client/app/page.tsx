@@ -55,12 +55,14 @@ export default async function Home() {
             <div className="grid relative
                   xxs:grid-cols-1
                   xs:grid-cols-1 
-                  sm:grid-cols-1 
-                  md:grid-cols-1 left-[2.8rem]
-                  lg:grid-cols-2 top-[6rem]
+                  sm:grid-cols-1 left-[-4rem]
+                  md:grid-cols-1 left-[1.5rem]
+                  lg:grid-cols-1 top-[6rem] 
                   xl:grid-cols-2 left-[7vw]
-                  2xl: left-[11vw]
-                  3xl: left-[-1vw]
+                  2xl: left-[-2%]
+                  3xl: left-[2.5rem]
+                  5xl: left-[-8rem]
+
   ">
               {projects.map((project: Project) => (
                 <div key={project._id} className="project-card prose prose-md relative">
@@ -87,6 +89,7 @@ export default async function Home() {
                       },
                     }}
                   />
+
                   <Link
                     href={`/projects/${project.slug.current}`}
                     key={project._id} // Use project._id for the key
@@ -106,6 +109,7 @@ export default async function Home() {
 
                 </div>
               ))}
+
             </div>
           </section>
         </main>

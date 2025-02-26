@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 html, body {
   font-family: 'Roboto', sans-serif; /* Added sans-serif as a fallback */
 }
@@ -175,7 +173,7 @@ nav{
 @media (min-width: 600px) and (max-width:700px) {
   .projects {
 
-    min-width: 700px !important;
+    min-width: 600px !important;
   }
   .grid {
     display: grid;
@@ -190,13 +188,14 @@ body{
 }
 
 .translate{
-  transform: translate(0rem, 0rem) scale(1.0) !important;
+  transform: translate(-2.3rem, 0rem) scale(1.0) !important;
 }
 
 
 .project-card{
-  transform: translate(5rem, 0%) !important;
+  transform: translate(-2rem, 0%) !important;
   word-wrap: break-word !important;
+  max-width:max-content;
 }
 
 nav{
@@ -231,23 +230,26 @@ body{
 
 
 .project-card{
-  transform: translate(-1%, 0%) scaley(120%) !important;
+  transform: translate(2rem, 0%) scaley(120%) !important;
   word-wrap: break-word !important;
+  max-width:max-content;
 }
 
 .translate{
   transform: translate(2rem, -0px) !important;
 }
 
+
 }
 
 
 /* Large devices (lg: breakpoint in Tailwind, ~1024px) */
-@media (min-width: 900px) {
+@media (min-width: 850px) and (max-width: 900px) {
   .projects {
 
     min-width: 800px !important;
-    max-width: 850px !important;
+    max-width: 850px !important; 
+    left: 3rem;
   }
   
 
@@ -257,25 +259,63 @@ body{
   }
 
  
-
+.grid-cols-2{
+  gap: 4rem !important;
+}
   .project-card{
 
     word-wrap: break-word !important;
     min-width: 25rem !important; 
-  max-width: 30rem !important;
+    max-width:max-content;
+    margin-bottom: 6rem !important;
 
-
+    transform: translate(3.3rem, 0%) scaley(120%) !important;
   }
  
-.grid-cols-1{
+.grid{
   gap: 5rem !important;
-  grid-template-columns: repeat(2, 1fr) !important;
+
+
+}
+}
+
+@media (min-width: 900px) {
+  .projects {
+
+    min-width: 800px !important;
+    max-width: 850px !important; 
+    left: 3rem;
+  }
+  
+
+  body{
+    position: relative;
+    
+  }
+
+ 
+.grid-cols-2{
+  gap: 4rem !important;
+}
+  .project-card{
+
+    word-wrap: break-word !important;
+    min-width: 25rem !important; 
+    max-width:max-content;
+    margin-bottom: 6rem !important;
+
+    transform: translate(15%, 0%) scaley(120%) !important;
+  }
+ 
+.grid{
+  gap: 5rem !important;
+
 
 }
 }
 
 /* Extra large devices (xl: breakpoint in Tailwind, ~1280px) */
-@media (min-width: 1100px) {
+@media (min-width: 1050px) {
   .projects {
  
     min-width: 1000px !important;
@@ -287,8 +327,10 @@ body{
   }
   .project-card{
     min-width: 28rem !important; 
-    max-width: 33.25rem !important;
+    max-width:max-content;
     word-wrap: break-word !important;
+    position: relative; 
+    left: 3.3rem !important;
   }
 
   .translate{
@@ -303,41 +345,74 @@ body{
 min-width: 70% !important;
 max-width: 90% !important;
 min-height: 120% !important;
-left: 25% !important;
+left: 30% !important;
   }
 }
 
-/* 3XL devices (3xl: breakpoint in Tailwind, ~1536px) */
-@media (min-width: 1500px) {
+@media (min-width: 1100px) {
   .projects {
-    min-width: 1400px !important;
+ 
+    min-width: 1000px !important;
+  }
+  
+  body{
+    position: relative;
+    
+  }
+  .project-card{
+    min-width: 28rem !important; 
+    max-width:max-content;
+    word-wrap: break-word !important;
+    position: relative; 
+    left: -15% !important;
     
   }
 
-  body{
-    position: relative; 
-
+  .translate{
+    transform: translate(0px, 0px) scale(1.0) !important;
   }
+
+  div.grid{
+    gap: 7rem !important;
+  }
+
  
-  .project-card{
-    min-width: 30rem !important;
-    max-width: 36rem !important;
-  }
-  .scale{
-    min-width: 70% !important;
-    max-width: 90% !important;
-    min-height: 120% !important;
-    left: 25% !important;
-    top: -20% !important;
-      }
-
 }
 
-
-/* 5XL devices (5xl: breakpoint in Tailwind, ~1536px) */
-@media (min-width: 1900px) {
+/* 3XL devices (3xl: breakpoint in Tailwind, ~1536px) */
+@media (min-width: 1100px) {
   .projects {
-    min-width: 1600px !important;
+ 
+    min-width: 1000px !important;
+  }
+  
+  body{
+    position: relative;
+    
+  }
+  .project-card{
+    min-width: 28rem !important; 
+    max-width:max-content;
+    word-wrap: break-word !important;
+    position: relative; 
+    left: -15% !important;
+    
+  }
+
+  .translate{
+    transform: translate(0px, 0px) scale(1.0) !important;
+  }
+
+  div.grid{
+    gap: 7rem !important;
+  }
+
+ 
+}
+/* 5XL devices (5xl: breakpoint in Tailwind, ~1536px) */
+@media (min-width: 1500px) {
+  .projects {
+    min-width: 1100px !important;
     
   }
 
@@ -347,7 +422,7 @@ left: 25% !important;
   }
   .project-card{
     min-width: 33rem !important; 
-    max-width: 40rem !important;
+    max-width:max-content;
     word-wrap: break-word !important;
   }
 
@@ -361,17 +436,13 @@ left: 25% !important;
     left: 25% !important;
     top: -20% !important;
       }
- 
-}
-/*Targeting specific translate classes*/
+    }
 
-@media screen and (min-width: 900px) and (max-width: 1300px) {
-  .translate{
-    transform: translate(30%, -10%)  !important;
-  }
-
-  .translateH1{
-    transform: translate(0%, -20%) !important;
+  
+@media (min-width: 1900px) {
+  div.grid {
+    gap: 8rem !important;
+    grid-template-columns: repeat(3, minmax(1fr, auto));
   }
 }
 
@@ -380,6 +451,6 @@ body, html, :root {
   font-size: 16px !important;
 }
 
-.regular{
-  transform: translate(0px, 0px) scale(1.0) !important;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

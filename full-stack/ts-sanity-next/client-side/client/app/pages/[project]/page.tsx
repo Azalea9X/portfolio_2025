@@ -32,7 +32,7 @@ export default async function Project({ params }: Props) {
       <div className="project-card prose prose-md relative
 xs:min-w-[400px] max-w-[450px] 
 left-[-3vw]
-sm: left:-[1vw]
+sm: left:-[-2rem]
 
 
       ">
