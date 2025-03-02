@@ -30,7 +30,7 @@ alert(window.innerWidth);
       <nav className="font-extrabold relative 
       sm:left-[-2rem]
         md:top-[-6.25rem]
-        lg:top-[-260px] xl:top-[-260px] left-[8%] text-white bg-black flex justify-left
+        lg:left-[6rem !important] top-[-360px] xl:top-[-260px] left-[8%] text-white bg-black flex justify-left
         2xl:left-[5.6rem]
       ">
         {pages.map((page) => (

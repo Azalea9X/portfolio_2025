@@ -1,7 +1,8 @@
 import { getProject } from "@/app/components/schemaTypes/sanity-utils";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
-
+import Nav from "@/app/navbar";
+import "./../../../app/projects.css";
 type Props = {
   params: {
     project: string;
@@ -30,13 +31,14 @@ export default async function Project({ params }: Props) {
 
     return (
       <div className="project-card prose prose-md relative
-                         md:left-[2.8rem]
-                  lg:top-[6rem]
-                  xl:left-[7vw]
-                  2xl: left-[11vw]
-                  3xl: left-[-1vw]
+        
+          md:left-[25rem] top-[5rem]
+          lg:left-[30rem] top-[15rem]
+          xl:translate
       ">
+        <Nav />
         <h2 className="text-2xl extra-bold">{project.title}</h2>
+        
         <PortableText
           value={project.content}
           components={{

@@ -2,6 +2,7 @@ import { getPage } from "@/app/sanity-next-js/schemaTypes/schemaTypes/sanity-uti
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import Nav from "@/app/navbar";
+import "./../../../app/projects.css";
 type Props = {
   params: {
     project: string;
