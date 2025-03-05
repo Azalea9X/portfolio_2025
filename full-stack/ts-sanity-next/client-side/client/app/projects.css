@@ -130,10 +130,11 @@ html, body {
   
   }
   
-  /*For extra small screens */
+  /*For extra small screens 
+  400px and 600px*/
  @media screen and (min-width:25rem) and (max-width:37.5rem) {
     .project-card{
-        transform: translate(20%, 20%) !important;
+        transform: translate(20%, -10%) !important;
         word-wrap: break-word;
    
     }
@@ -142,13 +143,15 @@ html, body {
  nav{
     position: relative; 
     left: -4.9% !important;
+    top: 5% !important;
  }
   
 }
 
+/* For small screens 600px and 750px */
 @media screen and (min-width:37.56rem) and (max-width:46.875rem) {
     .project-card{
-        transform: translate(20%, 20%) !important;
+        transform: translate(-32%, -5%) !important;
         word-wrap: break-word;
    
     }
@@ -157,48 +160,55 @@ html, body {
  nav{
     position: relative; 
     left: -3.99% !important;
+    top: 5% !important;
  }
   
 }
 
-@media screen and (min-width:46.9375rem) and (max-width:62.5rem) {
+/* For medium screens 751px and 902px */
+@media screen and (min-width:46.9375rem) and (max-width:53.125rem) {
     .project-card{
- transform: translate(-28%, 10rem) !important;
+ transform: translate(-27%, 2rem) !important;
         word-wrap: break-word;
-
+        
+      min-width: 90% !important; 
    
     }
 
 
  nav{
     position: relative; 
-    left: -13% !important;
-    min-width:130% !important;
+    left: -3% !important;
+
  }
   
 }
-@media screen and (min-width:62.5625rem) and (max-width:67.5rem) {
+
+/* For large screens 850px and 950px */
+@media screen and (min-width:53.125rem) and (max-width:59.375rem) {
     .project-card{
- transform: translate(-5rem, 2rem) !important;
+ transform: translate(-18vw, 5rem) !important;
         word-wrap: break-word;
+        min-width: 700px !important;
    
     }
 
 
  nav{
     position: relative; 
-    left: -0% !important;
+    left: -1% !important;
    top: -25% !important;
    transform: translateY(-10%) !important;
  }
   
 }
 
-@media screen and (min-width:67.57rem) and (max-width:75rem) {
+/* For larger screens 950px approx and 1050px */
+@media screen and (min-width:59.3751rem) and (max-width:65.625rem) {
     .project-card{
- transform: translate(13rem, 10rem) !important;
+ transform: translate(-10.5rem, 10rem) !important;
         word-wrap: break-word;
-        min-width: 1000px !important;
+        min-width: 800px !important;
    
     }
 
@@ -210,156 +220,135 @@ html, body {
   
 }
 
-@media screen and (min-width:75.06rem) and (max-width:84.375rem) {
+/* For larger screens 1051px and 1160px */
+@media screen and (min-width:65.626rem) and (max-width:72.5rem) {
     .project-card{
- transform: translate(30.99rem, -5rem) !important;
+
         word-wrap: break-word;
-        min-width: 1200px !important;
-   
+        min-width: 900px !important;
+   position: relative; 
+   left: 42vw !important; 
+   top: 2rem !important;
     }
 
 
  nav{
     position: relative; 
-    left: -1.5% !important;
+    left: -2.5% !important;
     top: 15% !important;
  }
   
 }
 
-@media (min-width:84.5rem) {
-    .project-card{
- transform: translate(53%, -5rem) !important;
-        word-wrap: break-word;
-        min-width: 1200px !important;
-   
-    }
-
-
- nav{
-    position: relative; 
-    left: -2% !important;
-    top: 13% !important;
- }
-  
-}
-
-@media screen and (min-width:93.75rem) {
-    .project-card{
- transform: translate(31.5rem, -5rem) !important;
-        word-wrap: break-word;
-        min-width: 1600px !important;
-   
-    }  
-
-
- nav{
-    position: relative; 
-    left: -2% !important;
- }
-  
-}
-
-@media screen and (min-width:96.875rem) {
+/* For larger screens 1160px and 1360*/
+@media screen and (min-width:72.61rem) and (max-width:85rem) {
    .project-card{
-transform: translate(35.5rem, -5rem) !important;
+
        word-wrap: break-word;
-       min-width: 1600px !important;
-  
-   }  
+       min-width: 900px !important;
+  position: relative; 
+  left: 45vw !important; 
+  top: 2rem !important;
+   }
 
 
 nav{
    position: relative; 
-   left: -2% !important;
+   left: -2.5% !important;
+   top: 15% !important;
 }
  
 }
 
-@media screen and (min-width:119.4375rem) and (max-width:125rem) {
-    .project-card{
- transform: translate(43%, 10rem) !important;
-        word-wrap: break-word;
-        min-width: 1800px !important;
-   
-    }
+/* For larger screens 1360px and 1560*/
+@media screen and (min-width:85.1rem) and (max-width:97.5rem) {
+   .project-card{
+
+       word-wrap: break-word;
+       min-width: 1100px !important;
+  position: relative; 
+  left: 43.5vw !important; 
+  top: 2rem !important;
+   }
 
 
- nav{
-    position: relative; 
-    left: -2% !important;
- }
-  
+nav{
+   position: relative; 
+   left: -2.5% !important;
+   top: 15% !important;
+}
+ 
 }
 
-@media screen and (min-width:125.06rem) and (max-width:137.5rem) {
-    .project-card{
- transform: translate(50%, 10rem) !important;
-        word-wrap: break-word;
-        min-width: 1800px !important;
-   
-    }
+/* For larger screens 1560px and 1760*/
+@media screen and (min-width:97.6rem) and (max-width:110rem) {
+   .project-card{
+
+       word-wrap: break-word;
+       min-width: 1200px !important;
+  position: relative; 
+  left: 44.2vw !important; 
+  top: 2rem !important;
+   }
 
 
- nav{
-    position: relative; 
-    left: -2% !important;
- }
-  
+nav{
+   position: relative; 
+   left: -2.5% !important;
+   top: 15% !important;
+}
+ 
 }
 
-@media screen and (min-width:137.5625rem) and (max-width:143.75rem) {
-    .project-card{
- transform: translate(45%, 10rem) !important;
-        word-wrap: break-word;
-        min-width: 2000px !important;
-   
-    }
+/* For larger screens 1760px and 1960*/
+@media screen and (min-width:110.1rem) and (max-width:122.5rem) {
+   .project-card{
+
+       word-wrap: break-word;
+       min-width: 1300px !important;
+  position: relative; 
+  left: 45vw !important; 
+  top: 2rem !important;
+   }
 
 
- nav{
-    position: relative; 
-    left: -2% !important;
- }
-  
+nav{
+   position: relative; 
+   left: -2.5% !important;
+   top: 15% !important;
+}
+ 
 }
 
-@media screen and (min-width:143.8125rem) and (max-width:153.125rem) {
-    .project-card{
- transform: translate(52%, 10rem) !important;
-        word-wrap: break-word;
-        min-width: 2000px !important;
-   
-    }
+/* For larger screens 1960px and 2161*/
+@media screen and (min-width:122.6rem) and (max-width:135.0625rem) {
+   .project-card{
+
+       word-wrap: break-word;
+       min-width: 1600px !important;
+  position: relative; 
+  left: 41vw !important; 
+  top: 2rem !important;
+   }
 
 
- nav{
-    position: relative; 
-    left: -2% !important;
- }
-  
+nav{
+   position: relative; 
+   left: -2.5% !important;
+   top: 15% !important;
+}
+ 
 }
 
-@media screen and (min-width:153.1875rem) {
-    .project-card{
- transform: translate(55%, 10rem) !important;
-        word-wrap: break-word;
-        min-width: 2000px !important;
-   
-    }
 
 
- nav{
-    position: relative; 
-    left: -2% !important;
- }
-  
-}
-  body, html, :root, * {
-box-sizing: border-box;
-    font-size: 16px !important;
-  }
+
   
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
+  body, html, :root, * {
+   box-sizing: border-box;
+       font-size: 16px !important;
+     }

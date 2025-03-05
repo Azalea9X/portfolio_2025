@@ -5,7 +5,7 @@ const config: Config = {
 
          "./app/pages/**/*.{js,ts,jsx,tsx,mdx}",
          "./app/pages/*.{js,ts,jsx,tsx,mdx}",
-         "./app/projects/**/*.{js,ts,jsx,tsx,mdx}",
+         "./app/projects/**/*.{js,ts,jsx,tsx,mdx}", 
          "./app/projects/*.{js,ts,jsx,tsx,mdx}",
          "./app/about/*.{js,ts,jsx,tsx,mdx}",
          "./app/components/*.{js,ts,jsx,tsx,mdx}",
