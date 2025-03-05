@@ -9,7 +9,7 @@ import Grid from "./grid";
  
 const getProperties = async(slug) => {
     try {
-        const HYGRAPH_ENDPOINT = process.env.HYGRAPH_ENDPOINT; 
+        const HYGRAPH_ENDPOINT = "https://us-west-2.cdn.hygraph.com/content/cm4cwflnp00a407w3zn8rlocl/master"; 
         const response = await fetch(HYGRAPH_ENDPOINT, {
             method: "POST", 
             headers: {
