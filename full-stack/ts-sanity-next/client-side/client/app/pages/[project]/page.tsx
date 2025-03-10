@@ -1,7 +1,7 @@
 import { getPage } from "@/app/sanity-next-js/schemaTypes/schemaTypes/sanity-utils";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
-import Nav from "@/app/navbar";
+import Nav from "./../../navbar";
 import "./../../../app/projects.css";
 type Props = {
   params: {
