@@ -64,7 +64,7 @@ export default async function Home() {
                   5xl: left-[-8rem]
 
   ">
-              {projects.map((project: Project) => (
+              {projects.map((project: any) => (
                 <div key={project._id} className="project-card prose prose-md relative">
                   <h2 className="text-2xl extra-bold">{project.title}</h2>
                   <PortableText

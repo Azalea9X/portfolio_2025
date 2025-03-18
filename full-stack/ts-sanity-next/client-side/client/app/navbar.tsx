@@ -1,7 +1,7 @@
 'use client'
 import {useEffect, useState} from "react"; 
 import { useRouter } from 'next/navigation'
-import { getPages } from './sanity-next-js/schemaTypes/schemaTypes/sanity-utils';
+import { getPages } from "@/app/components/schemaTypes/sanity-utils";
 const Nav = () => {
   const router = useRouter();
   const [pages, setPages] = useState([]);
@@ -9,7 +9,7 @@ const Nav = () => {
   useEffect(() => {
     const fetchPages = async () => {
       try {
-        const pagesData = await getPages();
+        const pagesData:any = await getPages();
         setPages(pagesData);
       } catch (error) {
         console.error("Error fetching pages:", error);
@@ -19,9 +19,9 @@ const Nav = () => {
 
     fetchPages();
   }, []);
-alert(window.innerWidth);
+//alert(window.innerWidth);
   // Function to navigate to a page based on its slug
-  const handleNavigation = (slug) => {
+  const handleNavigation = (slug:string) => {
     router.push(`/pages/${slug}`);
   };
 
@@ -33,7 +33,7 @@ alert(window.innerWidth);
         lg:left-[6rem !important] top-[-360px] xl:top-[-260px] left-[8%] text-white bg-black flex justify-left
         2xl:left-[5.6rem]
       ">
-        {pages.map((page) => (
+        {pages.map((page:any) => (
           <button
             key={page._id}
             className="text-2xl py-4 px-8 rounded-lg hover:bg-gray-700 transition duration-300"

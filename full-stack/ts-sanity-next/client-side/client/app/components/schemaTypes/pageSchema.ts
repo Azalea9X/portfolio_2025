@@ -23,6 +23,7 @@ const page = {
     {
   name: 'content', 
   title: 'Content', 
+
   type: 'array',
   of: [
     {

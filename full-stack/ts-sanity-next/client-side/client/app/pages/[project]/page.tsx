@@ -1,4 +1,4 @@
-import { getPage } from "@/app/sanity-next-js/schemaTypes/schemaTypes/sanity-utils";
+import { getPage } from "@/app/components/schemaTypes/sanity-utils";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import Nav from "@/app/navbar";
@@ -20,10 +20,10 @@ type Project = {
   };
 };
 
-export default async function Project({ params }: Props) {
+export default async function Project({ params }: any) {
   try {
     const slug = await params.project;
-    const page = await getPage(slug);
+    const page:any = await getPage(slug);
 
     if (!page) {
       throw new Error("Project not found");
@@ -74,7 +74,7 @@ sm: left:-[-2rem]
         )}
       </div>
     );
-  } catch (error) {
+  } catch (error:any | unknown) {
     console.error(error);
     return <div>Error: {error.message}</div>;
   }

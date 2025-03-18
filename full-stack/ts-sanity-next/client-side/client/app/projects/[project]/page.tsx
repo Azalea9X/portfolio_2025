@@ -20,10 +20,10 @@ type Project = {
   };
 };
 
-export default async function Project({ params }: Props) {
+export default async function Project({ params }: any) {
   try {
     const slug = await params.project;
-    const project = await getProject(slug);
+    const project:any = await getProject(slug);
 
     if (!project) {
       throw new Error("Project not found");
@@ -74,7 +74,7 @@ export default async function Project({ params }: Props) {
         )}
       </div>
     );
-  } catch (error) {
+  } catch (error:any) {
     console.error(error);
     return <div>Error: {error.message}</div>;
   }
