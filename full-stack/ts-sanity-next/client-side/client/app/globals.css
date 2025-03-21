@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("./../animate.css/docs/animate.min.css");
+
 
 html, body {
   font-family: 'Roboto', sans-serif; /* Added sans-serif as a fallback */
@@ -639,4 +639,3 @@ box-shadow:rgba(0, 0, 0, 0.1);
 }
 
 
-@import url("./../animate.css/animate.css");
