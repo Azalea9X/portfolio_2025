@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("./../animate.css/docs/animate.min.css");
 
 html, body {
   font-family: 'Roboto', sans-serif; /* Added sans-serif as a fallback */
@@ -420,10 +420,11 @@ h1{
   }
 
   h1 {
-    transform: translate(24.5rem, -3rem) !important;
-    margin-top: 2rem !important;
-    margin-bottom: 15rem !important;
-  }
+  transform: translate(24.5rem, -3rem) !important;
+  margin-top: 2rem !important;
+  margin-bottom: 15rem !important;
+
+}
 }
 
 
@@ -630,5 +631,12 @@ h1{
     transform: translate(36.5rem, -1rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 15rem !important;
+  
+box-shadow:rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  
   }
 }
+
+
+@import url("./../animate.css/animate.css");

@@ -11,6 +11,8 @@ import { PortableText } from '@portabletext/react'
 import project from "./components/schemaTypes/projectSchema";
 import { PortableTextInput } from "sanity";
 import { useEffect } from "react";
+import 'animate.css/animate.min.css';
+import Animate from "./components/animate";
 
 export default async function Home() {
   const projects: Project[] = await getProjects();
@@ -18,6 +20,7 @@ export default async function Home() {
   if (!projects) {
     return <div>Loading...</div>;
   }
+<Animate/>
 
   return (
     <>
@@ -33,7 +36,9 @@ export default async function Home() {
                   lg:text-5xl left-[-6rem] 
                   xl:text-6xl left-[2rem]
                   2xl:text-6xl left-[8rem]
-                  4xl: my-[5rem]
+                  4xl: my-[5rem] animate__animated animate__bounce
+                  5xl: animate__animated animate__bounce
+                  6xl: animate__bounceIn
                    ">Hi! I am Jacob Siegel!</h1>
           <div className="grid relative
   xs:grid-cols-1
