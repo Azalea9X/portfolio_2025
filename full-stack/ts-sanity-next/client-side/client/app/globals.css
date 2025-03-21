@@ -372,9 +372,10 @@ body{
 }
 
 h1{
-  transform: translate(1.5rem, 1rem) !important;
+  transform: translate(-1rem, 1rem) !important;
   margin-top: 2rem !important; 
   margin-bottom: 7rem !important;
+  min-width: 800px !important;
 }
 
 }
@@ -390,11 +391,11 @@ h1{
   .project-card {
     min-width: 30rem !important;
     max-width: 35rem !important;
-    transform: translateX(-33.5rem) scaley(110%) !important; 
+    transform: translateX(-33.5rem) translateY(-9rem) scaley(110%) !important; 
     word-wrap: break-word !important;
     max-width: 500px !important;
     margin-bottom: 12rem !important;
-    padding-top: 10rem !important;
+    padding-top: 5rem !important;
     margin-top: 5rem !important;
     padding-bottom: 10rem !important;
   }
@@ -414,7 +415,7 @@ h1{
   }
 
   h1 {
-    transform: translate(5.5rem, -3rem) !important;
+    transform: translate(16.5rem, -3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 10rem !important;
     min-width: 700px !important;
@@ -431,9 +432,9 @@ h1{
   }
 
   .project-card {
-    min-width: 30rem !important;
-    max-width: 35rem !important;
-    transform: translateX(-35.5rem) scaley(110%) !important; 
+    min-width: 34rem !important;
+    max-width: 38rem !important;
+    transform: translateX(-32.5rem) translateY(-8rem) scaley(110%) !important; 
     word-wrap: break-word !important;
     max-width: 500px !important;
     margin-bottom: 12rem !important;
@@ -459,7 +460,8 @@ h1{
   h1 {
   transform: translate(21.5rem, -3rem) !important;
   margin-top: 2rem !important;
-  margin-bottom: 15rem !important;
+  margin-bottom: 1rem !important;
+  min-width: 800px !important;
 
 }
 }
@@ -474,9 +476,9 @@ h1{
   }
 
   .project-card {
-    min-width: 30rem !important;
-    max-width: 35rem !important;
-    transform: translateX(-36.5rem) scaley(110%) !important; 
+    min-width: 40rem !important;
+    max-width: 45rem !important;
+    transform: translateX(-39.5rem) translateY(-5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
     max-width: 500px !important;
     margin-bottom: 12rem !important;
@@ -500,9 +502,10 @@ h1{
   }
 
   h1 {
-    transform: translate(28.5rem, 3rem) !important;
+    transform: translate(10rem, 3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 15rem !important;
+    min-width: 1000px !important;
   }
 }
 
@@ -516,11 +519,11 @@ h1{
   }
 
   .project-card {
-    min-width: 30rem !important;
-    max-width: 35rem !important;
-    transform: translateX(-42.5rem) scaley(110%) !important; 
+    min-width: 40rem !important;
+    max-width: 45rem !important;
+    transform: translateX(-39.5rem) translateY(-5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
-    max-width: 600px !important;
+    max-width: 500px !important;
     margin-bottom: 12rem !important;
     padding-top: 5rem !important;
     margin-top: 10rem !important;
@@ -542,13 +545,15 @@ h1{
   }
 
   h1 {
-    transform: translate(36.5rem, -3rem) !important;
+    transform: translate(10rem, 3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 15rem !important;
+    min-width: 1000px !important;
   }
 }
 
-@media (min-width: 2001px) and (max-width:2200px) {
+
+@media (min-width: 2001px) and (max-width: 2200px) {
   .projects {
     min-width: 37.5rem !important;
     max-width: 40rem !important;
@@ -557,11 +562,11 @@ h1{
   }
 
   .project-card {
-    min-width: 30rem !important;
-
-    transform: translateX(-51.5rem) scaley(110%) !important; 
+    min-width: 40rem !important;
+    max-width: 45rem !important;
+    transform: translateX(-39.5rem) translateY(-5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
- max-width: 800px !important;
+    max-width: 500px !important;
     margin-bottom: 12rem !important;
     padding-top: 5rem !important;
     margin-top: 10rem !important;
@@ -583,13 +588,15 @@ h1{
   }
 
   h1 {
-    transform: translate(36.5rem, -1rem) !important;
+    transform: translate(27rem, 3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 15rem !important;
+    min-width: 1000px !important;
   }
 }
 
-@media (min-width: 2201px) and (max-width:2400px) {
+
+@media (min-width: 2201px) and (max-width: 2400px) {
   .projects {
     min-width: 37.5rem !important;
     max-width: 40rem !important;
@@ -598,11 +605,11 @@ h1{
   }
 
   .project-card {
-    min-width: 30rem !important;
-
-    transform: translateX(-61.5rem) scaley(110%) !important; 
+    min-width: 40rem !important;
+    max-width: 45rem !important;
+    transform: translateX(-48.5rem) translateY(-5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
-    max-width: 1000px !important;
+    max-width: 500px !important;
     margin-bottom: 12rem !important;
     padding-top: 5rem !important;
     margin-top: 10rem !important;
@@ -624,13 +631,15 @@ h1{
   }
 
   h1 {
-    transform: translate(36.5rem, -1rem) !important;
+    transform: translate(10rem, 3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 15rem !important;
+    min-width: 1500px !important;
   }
 }
 
-@media (min-width: 2401px) and (max-width:2600px) {
+
+@media (min-width: 2401px) and (max-width: 2600px) {
   .projects {
     min-width: 37.5rem !important;
     max-width: 40rem !important;
@@ -638,18 +647,18 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
   }
 
-.project-card {
-  min-width: 30rem !important;
-  transform: translateX(-60rem) scaley(110%) !important; 
-  word-wrap: break-word !important;
-  max-width: 1000px !important;
-  overflow-y: auto !important;
-  overflow-x: auto !important;
-  margin-bottom: 12rem !important;
-  padding-top: 5rem !important;
-  margin-top: 10rem !important;
-  padding-bottom: 10rem !important;
-}
+  .project-card {
+    min-width: 40rem !important;
+    max-width: 45rem !important;
+    transform: translateX(-48.5rem) translateY(-5rem) scaley(110%) !important; 
+    word-wrap: break-word !important;
+    max-width: 500px !important;
+    margin-bottom: 12rem !important;
+    padding-top: 5rem !important;
+    margin-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
+
   .grid {
     display: grid;
     gap: 5 !important;
@@ -665,14 +674,9 @@ h1{
   }
 
   h1 {
-    transform: translate(36.5rem, -1rem) !important;
+    transform: translate(20rem, 3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 15rem !important;
-  
-box-shadow:rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-  
+    min-width: 1500px !important;
   }
 }
-
-

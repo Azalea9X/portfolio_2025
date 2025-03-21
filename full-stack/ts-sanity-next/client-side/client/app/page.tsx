@@ -29,10 +29,10 @@ export default async function Home() {
         <main className="mx-auto p-4">
           <section className="projects">
             <h1 className="text-4xl relative font-extrabold text-center mb-4
-                  xxs:text-2xl 
+                  xxs:text-2xl left-[-3rem] top-[-5rem]
                   xs:top-[-9rem]
-                  sm:text-5xl left-[-10rem]
-                  md:text-4xl left-[-2rem] top-[2rem]
+                  sm:text-5xl left-[11rem]
+                  md:text-4xl left-[7rem] top-[-1rem]
                   lg:text-5xl left-[-6rem] 
                   xl:text-6xl left-[2rem]
                   2xl:text-6xl left-[8rem]
@@ -54,9 +54,10 @@ export default async function Home() {
 ">
               {projects.map((project: any) => (
                 <div key={project._id} className="project-card prose prose-md relative
-                xs:left-[3rem] top-[-3rem]
-                sm:left-[-13rem] min-w-[95vw] top-[-6rem] max-w-[500px]
-                md:left-[-6rem] top-[-6rem] min-w-[95vw] max-w-[600px]
+                xxs:left-[-9rem] top-[-5rem]
+                xs:left-[-6rem] top-[-3rem]
+                sm:left-[-11rem] min-w-[95vw] top-[-6rem] max-w-[500px]
+                md:left-[-5rem] top-[-6rem] min-w-[95vw] max-w-[600px]
                 lg:left-[-2rem] min-w-[95vw] max-w-[900px]
                 xl:left-[-1.5rem] min-w-[105vw] max-w-[900px]
                 2xl: max-w-[15vw] left-[-26rem] top-[5rem]
