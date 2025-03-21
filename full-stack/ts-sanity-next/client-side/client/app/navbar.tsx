@@ -27,11 +27,13 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="font-extrabold relative 
+    <nav className="font-extrabold relative bg-black d-flex justify-content-between text-white
+      xs:top-[-5.25rem] left-[-1.35rem] my-[6rem] max-w-[120%] min-w-[110%]
       sm:left-[-2rem]
-        md:top-[-6.25rem]
-        lg:left-[6rem !important] top-[-360px] xl:top-[-260px] left-[8%] text-white bg-black flex justify-left
-        2xl:left-[5.6rem]
+      md:justify-content-center top-[-1.5rem]
+      lg:justify-content-center min-w-[120%]
+      xl:justify-content-between
+      2xl:justify-content-around
       ">
         {pages.map((page:any) => (
           <button

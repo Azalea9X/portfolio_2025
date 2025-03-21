@@ -34,7 +34,9 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-gray-100 text-gray-900">
         <div className="relative min-h-screen "> {/* added for layout */}
-          <main className="relative ">
+          <main className="relative 
+       
+          ">
             {children}
           </main>
           {/* Optional: Add a footer here if needed */}

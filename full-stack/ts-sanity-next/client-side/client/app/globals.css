@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 html, body {
   font-family: 'Roboto', sans-serif; /* Added sans-serif as a fallback */
@@ -114,11 +118,7 @@ body, html, p, h1, h2, h3, h4, h5, h6, * {
 max-width: 100vh !important;
 
   }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 5rem;/* Two columns on medium screens */
-  }
+ 
 
   
 body{
@@ -136,7 +136,7 @@ body{
 }
 
 /*For extra small screens */
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 500px){
   .projects {
 
     min-width: 700px !important;
@@ -168,6 +168,11 @@ nav{
 }
 }
 
+@media (min-width: 501px) and (max-width: 600px){
+ 
+
+
+}
 
 /* Medium devices (md: breakpoint in Tailwind, ~768px) */
 @media (min-width: 600px) and (max-width:700px) {
@@ -177,7 +182,7 @@ nav{
   }
   .grid {
     display: grid;
- 
+    grid-template-columns: 1fr;
     gap: 5rem;/* Two columns on medium screens */
   }
 
@@ -193,7 +198,7 @@ body{
 
 
 .project-card{
-  transform: translate(-2rem, 0%) !important;
+  transform: translate(-.5rem, -9rem) !important;
   word-wrap: break-word !important;
   max-width:max-content;
 }
@@ -201,10 +206,13 @@ body{
 nav{
   transform: translate(1.3rem, 0rem) !important;
 }
+h1{
+  transform: translate(-11rem, 0rem) !important;
+}
 }
 
 /* Medium devices (md: breakpoint in Tailwind, ~768px) */
-@media (min-width: 700px)  {
+@media (min-width: 700px) and (max-width: 800px) {
   .projects {
  
 min-width: 37.5rem !important; 
@@ -219,6 +227,7 @@ max-width: 40rem !important;
   .grid {
     display: grid;
     gap: 5 !important;
+    grid-template-columns: 1fr;
    }
 
   
@@ -230,227 +239,396 @@ body{
 
 
 .project-card{
-  transform: translate(2rem, 0%) scaley(120%) !important;
+  transform: translate(-4rem, -14rem)  !important;
   word-wrap: break-word !important;
   max-width:max-content;
+  margin-bottom: 3rem !important;
 }
 
 .translate{
   transform: translate(2rem, -0px) !important;
 }
 
+h1{
+  transform: translate(-8.3rem, -3rem) !important;
+}
 
 }
 
 
-/* Large devices (lg: breakpoint in Tailwind, ~1024px) */
-@media (min-width: 850px) and (max-width: 900px) {
+@media (min-width: 800px) and (max-width: 1000px) {
   .projects {
-
-    min-width: 800px !important;
-    max-width: 850px !important; 
-    left: 3rem;
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
-  
+  .project-card
+  {min-width: 33rem !important; 
+  max-width: 40rem !important;
+  transform: translate(-12rem, -25rem ) !important;
+  word-wrap: break-word !important;
+  max-width:max-content;
+  margin-bottom: 12rem !important; padding-top: 10rem !important; padding-bottom: 10rem !important;
 
-  body{
+}
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: 1fr;
+   }
+
+  
+body{
+  position: relative; 
+  
+}
+
+
+
+
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(-4.3rem, -3rem) !important;
+  margin-top: 2rem !important; 
+  margin-bottom: 2rem !important;
+}
+
+}
+
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .projects {
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
+  }
+  .project-card
+  {min-width: 33rem !important; 
+  max-width: 48rem !important;
+  transform: translate(-11.5rem, -25rem)  !important;
+  word-wrap: break-word !important;
+  max-width:max-content;
+  margin-bottom: 12rem !important; padding-top: 10rem !important; padding-bottom: 10rem !important;
+
+}
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: 1fr;
+   }
+
+  
+body{
+  position: relative; 
+  
+}
+
+
+
+
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(1.5rem, -3rem) !important;
+  margin-top: 2rem !important; 
+  margin-bottom: 5rem !important;
+}
+
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .projects {
+    min-width: 37.5rem !important;
+    max-width: 40rem !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+  }
+
+  .project-card {
+    min-width: 30rem !important;
+    max-width: 35rem !important;
+    transform: translateX(-40.5rem) scaley(110%) !important; 
+    word-wrap: break-word !important;
+    max-width: 500px !important;
+    margin-bottom: 12rem !important;
+    padding-top: 10rem !important;
+    margin-top: 5rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
+  }
+
+  body {
     position: relative;
-    
   }
 
- 
-.grid-cols-2{
-  gap: 4rem !important;
-}
-  .project-card{
-
-    word-wrap: break-word !important;
-    min-width: 25rem !important; 
-    max-width:max-content;
-    margin-bottom: 6rem !important;
-
-    transform: translate(3.3rem, 0%) scaley(120%) !important;
+  .translate {
+    transform: translate(-6rem, -0px) !important;
   }
- 
-.grid{
-  gap: 5rem !important;
 
-
+  h1 {
+    transform: translate(13.5rem, -3rem) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 10rem !important;
+  }
 }
-}
 
-@media (min-width: 900px) {
+
+@media (min-width: 1401px) and (max-width: 1600px) {
   .projects {
-
-    min-width: 800px !important;
-    max-width: 850px !important; 
-    left: 3rem;
+    min-width: 37.5rem !important;
+    max-width: 40rem !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
   }
-  
 
-  body{
+  .project-card {
+    min-width: 30rem !important;
+    max-width: 35rem !important;
+    transform: translateX(-40.5rem) scaley(110%) !important; 
+    word-wrap: break-word !important;
+    max-width: 500px !important;
+    margin-bottom: 12rem !important;
+    padding-top: 5rem !important;
+    margin-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
+  }
+
+  body {
     position: relative;
-    
   }
 
- 
-.grid-cols-2{
-  gap: 4rem !important;
-}
-  .project-card{
-
-    word-wrap: break-word !important;
-    min-width: 25rem !important; 
-    max-width:max-content;
-    margin-bottom: 6rem !important;
-
-    transform: translate(15%, 0%) scaley(120%) !important;
+  .translate {
+    transform: translate(-6rem, -0px) !important;
   }
- 
-.grid{
-  gap: 5rem !important;
 
-
+  h1 {
+    transform: translate(24.5rem, -3rem) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 15rem !important;
+  }
 }
-}
 
-/* Extra large devices (xl: breakpoint in Tailwind, ~1280px) */
-@media (min-width: 1050px) {
+
+@media (min-width: 1601px) and (max-width: 1800px) {
   .projects {
- 
-    min-width: 1000px !important;
+    min-width: 37.5rem !important;
+    max-width: 40rem !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
   }
-  
-  body{
+
+  .project-card {
+    min-width: 30rem !important;
+    max-width: 35rem !important;
+    transform: translateX(-41.5rem) scaley(110%) !important; 
+    word-wrap: break-word !important;
+    max-width: 500px !important;
+    margin-bottom: 12rem !important;
+    padding-top: 5rem !important;
+    margin-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
+  }
+
+  body {
     position: relative;
-    
-  }
-  .project-card{
-    min-width: 28rem !important; 
-    max-width:max-content;
-    word-wrap: break-word !important;
-    position: relative; 
-    left: 3.3rem !important;
   }
 
-  .translate{
-    transform: translate(0px, 0px) scale(1.0) !important;
+  .translate {
+    transform: translate(-6rem, -0px) !important;
   }
 
-  div.grid{
-    gap: 7rem !important;
-  }
-
-  .scale{
-min-width: 70% !important;
-max-width: 90% !important;
-min-height: 120% !important;
-left: 30% !important;
+  h1 {
+    transform: translate(24.5rem, -3rem) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 15rem !important;
   }
 }
 
-@media (min-width: 1100px) {
+
+@media (min-width: 1801px) and (max-width: 2000px) {
   .projects {
- 
-    min-width: 1000px !important;
+    min-width: 37.5rem !important;
+    max-width: 40rem !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
   }
-  
-  body{
+
+  .project-card {
+    min-width: 30rem !important;
+    max-width: 35rem !important;
+    transform: translateX(-45.5rem) scaley(110%) !important; 
+    word-wrap: break-word !important;
+    max-width: 600px !important;
+    margin-bottom: 12rem !important;
+    padding-top: 5rem !important;
+    margin-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
+  }
+
+  body {
     position: relative;
-    
-  }
-  .project-card{
-    min-width: 28rem !important; 
-    max-width:max-content;
-    word-wrap: break-word !important;
-    position: relative; 
-    left: -15% !important;
-    
   }
 
-  .translate{
-    transform: translate(0px, 0px) scale(1.0) !important;
+  .translate {
+    transform: translate(-6rem, -0px) !important;
   }
 
-  div.grid{
-    gap: 7rem !important;
+  h1 {
+    transform: translate(36.5rem, -1rem) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 15rem !important;
   }
-
- 
 }
 
-/* 3XL devices (3xl: breakpoint in Tailwind, ~1536px) */
-@media (min-width: 1100px) {
+@media (min-width: 2001px) and (max-width:2200px) {
   .projects {
- 
-    min-width: 1000px !important;
+    min-width: 37.5rem !important;
+    max-width: 40rem !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
   }
-  
-  body{
+
+  .project-card {
+    min-width: 30rem !important;
+
+    transform: translateX(-51.5rem) scaley(110%) !important; 
+    word-wrap: break-word !important;
+ max-width: 800px !important;
+    margin-bottom: 12rem !important;
+    padding-top: 5rem !important;
+    margin-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
+  }
+
+  body {
     position: relative;
-    
-  }
-  .project-card{
-    min-width: 28rem !important; 
-    max-width:max-content;
-    word-wrap: break-word !important;
-    position: relative; 
-    left: -15% !important;
-    
   }
 
-  .translate{
-    transform: translate(0px, 0px) scale(1.0) !important;
+  .translate {
+    transform: translate(-6rem, -0px) !important;
   }
 
-  div.grid{
-    gap: 7rem !important;
+  h1 {
+    transform: translate(36.5rem, -1rem) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 15rem !important;
   }
-
- 
 }
-/* 5XL devices (5xl: breakpoint in Tailwind, ~1536px) */
-@media (min-width: 1500px) {
+
+@media (min-width: 2201px) and (max-width:2400px) {
   .projects {
-    min-width: 1100px !important;
-    
+    min-width: 37.5rem !important;
+    max-width: 40rem !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
   }
 
-  body{
-    position: relative; 
+  .project-card {
+    min-width: 30rem !important;
 
-  }
-  .project-card{
-    min-width: 33rem !important; 
-    max-width:max-content;
+    transform: translateX(-61.5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
+    max-width: 1000px !important;
+    margin-bottom: 12rem !important;
+    padding-top: 5rem !important;
+    margin-top: 10rem !important;
+    padding-bottom: 10rem !important;
   }
 
-  div.grid{
-    gap: 8rem !important;
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
   }
-  .scale{
-    min-width: 70% !important;
-    max-width: 90% !important;
-    min-height: 120% !important;
-    left: 25% !important;
-    top: -20% !important;
-      }
-    }
 
-  
-@media (min-width: 1900px) {
-  div.grid {
-    gap: 8rem !important;
-    grid-template-columns: repeat(3, minmax(1fr, auto));
+  body {
+    position: relative;
+  }
+
+  .translate {
+    transform: translate(-6rem, -0px) !important;
+  }
+
+  h1 {
+    transform: translate(36.5rem, -1rem) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 15rem !important;
   }
 }
 
-body, html, :root {
-  box-sizing: border-box !important;
-  font-size: 16px !important;
-}
+@media (min-width: 2401px) and (max-width:2600px) {
+  .projects {
+    min-width: 37.5rem !important;
+    max-width: 40rem !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+  }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.project-card {
+  min-width: 30rem !important;
+  transform: translateX(-60rem) scaley(110%) !important; 
+  word-wrap: break-word !important;
+  max-width: 1000px !important;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+  margin-bottom: 12rem !important;
+  padding-top: 5rem !important;
+  margin-top: 10rem !important;
+  padding-bottom: 10rem !important;
+}
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
+  }
+
+  body {
+    position: relative;
+  }
+
+  .translate {
+    transform: translate(-6rem, -0px) !important;
+  }
+
+  h1 {
+    transform: translate(36.5rem, -1rem) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 15rem !important;
+  }
+}
