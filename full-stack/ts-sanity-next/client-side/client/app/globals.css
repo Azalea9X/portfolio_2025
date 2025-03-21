@@ -265,7 +265,7 @@ max-width: 40rem !important;
   .project-card
   {min-width: 33rem !important; 
   max-width: 40rem !important;
-  transform: translate(-12rem, -25rem ) !important;
+  transform: translate(-8rem, -20rem ) !important;
   word-wrap: break-word !important;
   max-width:max-content;
   margin-bottom: 12rem !important; padding-top: 10rem !important; padding-bottom: 10rem !important;
@@ -292,7 +292,7 @@ body{
 }
 
 h1{
-  transform: translate(-4.3rem, -3rem) !important;
+  transform: translate(-4.3rem, 3rem) !important;
   margin-top: 2rem !important; 
   margin-bottom: 2rem !important;
 }
@@ -336,9 +336,9 @@ body{
 }
 
 h1{
-  transform: translate(1.5rem, -3rem) !important;
+  transform: translate(1.5rem, 1rem) !important;
   margin-top: 2rem !important; 
-  margin-bottom: 5rem !important;
+  margin-bottom: 7rem !important;
 }
 
 }
@@ -354,7 +354,7 @@ h1{
   .project-card {
     min-width: 30rem !important;
     max-width: 35rem !important;
-    transform: translateX(-40.5rem) scaley(110%) !important; 
+    transform: translateX(-33.5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
     max-width: 500px !important;
     margin-bottom: 12rem !important;
@@ -378,9 +378,10 @@ h1{
   }
 
   h1 {
-    transform: translate(13.5rem, -3rem) !important;
+    transform: translate(5.5rem, -3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 10rem !important;
+    min-width: 700px !important;
   }
 }
 
@@ -396,7 +397,7 @@ h1{
   .project-card {
     min-width: 30rem !important;
     max-width: 35rem !important;
-    transform: translateX(-40.5rem) scaley(110%) !important; 
+    transform: translateX(-35.5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
     max-width: 500px !important;
     margin-bottom: 12rem !important;
@@ -420,7 +421,7 @@ h1{
   }
 
   h1 {
-  transform: translate(24.5rem, -3rem) !important;
+  transform: translate(21.5rem, -3rem) !important;
   margin-top: 2rem !important;
   margin-bottom: 15rem !important;
 
@@ -439,7 +440,7 @@ h1{
   .project-card {
     min-width: 30rem !important;
     max-width: 35rem !important;
-    transform: translateX(-41.5rem) scaley(110%) !important; 
+    transform: translateX(-36.5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
     max-width: 500px !important;
     margin-bottom: 12rem !important;
@@ -463,7 +464,7 @@ h1{
   }
 
   h1 {
-    transform: translate(24.5rem, -3rem) !important;
+    transform: translate(28.5rem, 3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 15rem !important;
   }
@@ -481,7 +482,7 @@ h1{
   .project-card {
     min-width: 30rem !important;
     max-width: 35rem !important;
-    transform: translateX(-45.5rem) scaley(110%) !important; 
+    transform: translateX(-42.5rem) scaley(110%) !important; 
     word-wrap: break-word !important;
     max-width: 600px !important;
     margin-bottom: 12rem !important;
@@ -505,7 +506,7 @@ h1{
   }
 
   h1 {
-    transform: translate(36.5rem, -1rem) !important;
+    transform: translate(36.5rem, -3rem) !important;
     margin-top: 2rem !important;
     margin-bottom: 15rem !important;
   }
