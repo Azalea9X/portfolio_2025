@@ -11,8 +11,8 @@ import { PortableText } from '@portabletext/react'
 import project from "./components/schemaTypes/projectSchema";
 import { PortableTextInput } from "sanity";
 import { useEffect } from "react";
-import 'animate.css/animate.min.css';
-import Animate from "./components/animate";
+
+
 
 export default async function Home() {
   const projects: Project[] = await getProjects();
@@ -20,7 +20,7 @@ export default async function Home() {
   if (!projects) {
     return <div>Loading...</div>;
   }
-<Animate/>
+
 
   return (
     <>
