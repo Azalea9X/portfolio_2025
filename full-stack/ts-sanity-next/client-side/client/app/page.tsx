@@ -24,10 +24,11 @@ export default async function Home() {
 
   return (
     <>
-
+<Nav />
       <div className="relative">
         <main className="mx-auto p-4">
           <section className="projects">
+            
             <h1 className="text-4xl relative font-extrabold text-center mb-4
                   xxs:text-2xl left-[-3rem] top-[-5rem]
                   xs:top-[-9rem]
