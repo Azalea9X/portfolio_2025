@@ -105,76 +105,9 @@ body, html, p, h1, h2, h3, h4, h5, h6, * {
     ============================================ */
 
 /* Small devices (sm: breakpoint in Tailwind, ~640px) */
-@media (min-width: 640px) {
-  h1 {
-    font-size: 3rem;
-  }
- 
-}
-
-@media (min-width: 300px )  {
-  .projects {
-
-max-width: 100vh !important;
-
-  }
- 
-
-  
-body{
-  position: relative; 
 
 
-}
-
-
-.project-card{
-  transform: translate(-5%, 0%) scaleX(.9) !important;
-  word-wrap: break-word;
-}
-
-}
-
-/*For extra small screens */
-@media (min-width: 400px) and (max-width: 500px){
-  .projects {
-
-    min-width: 700px !important;
-  }
-  .grid {
-    display: grid;
- 
-    gap: 5rem;/* Two columns on extra small screens */
-  }
-
-  
-body{
-  position: relative; 
-  
-}
-
-.translate{
-  transform: translate(-5rem, 0rem) scale(1.0) !important;
-}
-
-
-.project-card{
-  transform: translate(10rem, 0%) !important;
-  word-wrap: break-word !important;
-}
-
-nav{
-  transform: translate(1.3rem, 0rem) !important;
-}
-
-h1 {
-  transform: translate(-4rem, 0rem) !important;
-}
-}
-
-
-
-@media (min-width: 501px) and (max-width:600px) {
+@media (min-width: 401px) and (max-width:600px) {
   .projects {
 
     min-width: 600px !important;
@@ -197,7 +130,7 @@ body{
 
 
 .project-card{
-  transform: translate(-5.5rem, -9rem) !important;
+  transform: translate(-4.5rem, -13rem) !important;
   word-wrap: break-word !important;
   max-width:max-content;
 }
@@ -206,7 +139,7 @@ nav{
   transform: translate(1.3rem, 0rem) !important;
 }
 h1{
-  transform: translate(-14rem, 0rem) !important;
+  transform: translate(-13rem, 8rem) !important;
 }
 }
 
@@ -234,16 +167,18 @@ body{
 
 
 .project-card{
-  transform: translate(-.5rem, -9rem) !important;
+  transform: translate(-0rem, -13rem) !important;
   word-wrap: break-word !important;
-  max-width:max-content;
+  min-width: 80vw !important;
+  max-width:400px !important;
 }
 
 nav{
   transform: translate(1.3rem, 0rem) !important;
 }
 h1{
-  transform: translate(-11rem, 0rem) !important;
+  transform: translate(-4rem, 9rem) !important;
+  max-width: 400px !important;
 }
 }
 
@@ -257,6 +192,7 @@ max-width: 40rem !important;
   .project-card
   {min-width: 33rem !important; 
   max-width: 36rem !important;
+  transform: translate(12rem, -6rem) !important;
 
 
 }
@@ -275,7 +211,7 @@ body{
 
 
 .project-card{
-  transform: translate(-4rem, -14rem)  !important;
+  transform: translate(-6rem, -14rem)  !important;
   word-wrap: break-word !important;
   max-width:max-content;
   margin-bottom: 3rem !important;
@@ -286,13 +222,13 @@ body{
 }
 
 h1{
-  transform: translate(-8.3rem, -3rem) !important;
+  transform: translate(-8.3rem, 7rem) !important;
 }
 
 }
 
 
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 801px) and (max-width: 1000px) {
   .projects {
  
 min-width: 37.5rem !important; 
@@ -300,11 +236,9 @@ max-width: 40rem !important;
   }
   .project-card
   {min-width: 33rem !important; 
-  max-width: 40rem !important;
-  transform: translate(-8rem, -20rem ) !important;
-  word-wrap: break-word !important;
-  max-width:max-content;
-  margin-bottom: 12rem !important; padding-top: 10rem !important; padding-bottom: 10rem !important;
+  max-width: 36rem !important;
+  transform: translate(12rem, -6rem) !important;
+
 
 }
   .grid {
@@ -321,16 +255,19 @@ body{
 
 
 
-
+.project-card{
+  transform: translate(-8rem, -14rem)  !important;
+  word-wrap: break-word !important;
+  max-width:600px !important;
+  margin-bottom: 3rem !important;
+}
 
 .translate{
   transform: translate(2rem, -0px) !important;
 }
 
 h1{
-  transform: translate(-4.3rem, 3rem) !important;
-  margin-top: 2rem !important; 
-  margin-bottom: 2rem !important;
+  transform: translate(-2.3rem, 7rem) !important;
 }
 
 }
@@ -342,15 +279,7 @@ h1{
 min-width: 37.5rem !important; 
 max-width: 40rem !important;
   }
-  .project-card
-  {min-width: 33rem !important; 
-  max-width: 48rem !important;
-  transform: translate(-11.5rem, -25rem)  !important;
-  word-wrap: break-word !important;
-  max-width:max-content;
-  margin-bottom: 12rem !important; padding-top: 10rem !important; padding-bottom: 10rem !important;
-
-}
+  
   .grid {
     display: grid;
     gap: 5 !important;
@@ -365,318 +294,409 @@ body{
 
 
 
+.project-card{
+  transform: translate(-6rem, -14rem)  !important;
+  word-wrap: break-word !important;
 
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
 
 .translate{
   transform: translate(2rem, -0px) !important;
 }
 
 h1{
-  transform: translate(-1rem, 1rem) !important;
-  margin-top: 2rem !important; 
-  margin-bottom: 7rem !important;
-  min-width: 800px !important;
+  transform: translate(8.3rem, 7rem) !important;
 }
 
 }
+
 
 @media (min-width: 1201px) and (max-width: 1400px) {
   .projects {
-    min-width: 37.5rem !important;
-    max-width: 40rem !important;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
-
-  .project-card {
-    min-width: 30rem !important;
-    max-width: 35rem !important;
-    transform: translateX(-33.5rem) translateY(-9rem) scaley(110%) !important; 
-    word-wrap: break-word !important;
-    max-width: 500px !important;
-    margin-bottom: 12rem !important;
-    padding-top: 5rem !important;
-    margin-top: 5rem !important;
-    padding-bottom: 10rem !important;
-  }
-
+  
   .grid {
     display: grid;
     gap: 5 !important;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
-  }
+    grid-template-columns: 1fr;
+   }
 
-  body {
-    position: relative;
-  }
-
-  .translate {
-    transform: translate(-6rem, -0px) !important;
-  }
-
-  h1 {
-    transform: translate(16.5rem, -3rem) !important;
-    margin-top: 2rem !important;
-    margin-bottom: 10rem !important;
-    min-width: 700px !important;
-  }
+  
+body{
+  position: relative; 
+  
 }
 
+
+
+.project-card{
+  transform: translate(-18rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(17.3rem, 7rem) !important;
+}
+
+}
 
 @media (min-width: 1401px) and (max-width: 1600px) {
   .projects {
-    min-width: 37.5rem !important;
-    max-width: 40rem !important;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
-
-  .project-card {
-    min-width: 34rem !important;
-    max-width: 38rem !important;
-    transform: translateX(-32.5rem) translateY(-8rem) scaley(110%) !important; 
-    word-wrap: break-word !important;
-    max-width: 500px !important;
-    margin-bottom: 12rem !important;
-    padding-top: 5rem !important;
-    margin-top: 10rem !important;
-    padding-bottom: 10rem !important;
-  }
-
+  
   .grid {
     display: grid;
     gap: 5 !important;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
-  }
+    grid-template-columns: 1fr;
+   }
 
-  body {
-    position: relative;
-  }
-
-  .translate {
-    transform: translate(-6rem, -0px) !important;
-  }
-
-  h1 {
-  transform: translate(21.5rem, -3rem) !important;
-  margin-top: 2rem !important;
-  margin-bottom: 1rem !important;
-  min-width: 800px !important;
-
-}
+  
+body{
+  position: relative; 
+  
 }
 
+
+
+.project-card{
+  transform: translate(-13rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(24.3rem, 7rem) !important;
+min-width: 800px !important;
+
+}
+
+}
 
 @media (min-width: 1601px) and (max-width: 1800px) {
   .projects {
-    min-width: 37.5rem !important;
-    max-width: 40rem !important;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
-
-  .project-card {
-    min-width: 40rem !important;
-    max-width: 45rem !important;
-    transform: translateX(-39.5rem) translateY(-5rem) scaley(110%) !important; 
-    word-wrap: break-word !important;
-    max-width: 500px !important;
-    margin-bottom: 12rem !important;
-    padding-top: 5rem !important;
-    margin-top: 10rem !important;
-    padding-bottom: 10rem !important;
-  }
-
+  
   .grid {
     display: grid;
     gap: 5 !important;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
-  }
+    grid-template-columns: 1fr;
+   }
 
-  body {
-    position: relative;
-  }
-
-  .translate {
-    transform: translate(-6rem, -0px) !important;
-  }
-
-  h1 {
-    transform: translate(10rem, 3rem) !important;
-    margin-top: 2rem !important;
-    margin-bottom: 15rem !important;
-    min-width: 1000px !important;
-  }
+  
+body{
+  position: relative; 
+  
 }
 
+
+
+.project-card{
+  transform: translate(-14rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(40.3rem, 7rem) !important;
+min-width: 800px !important;
+
+}
+
+}
 
 @media (min-width: 1801px) and (max-width: 2000px) {
   .projects {
-    min-width: 37.5rem !important;
-    max-width: 40rem !important;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
-
-  .project-card {
-    min-width: 40rem !important;
-    max-width: 45rem !important;
-    transform: translateX(-39.5rem) translateY(-5rem) scaley(110%) !important; 
-    word-wrap: break-word !important;
-    max-width: 500px !important;
-    margin-bottom: 12rem !important;
-    padding-top: 5rem !important;
-    margin-top: 10rem !important;
-    padding-bottom: 10rem !important;
-  }
-
+  
   .grid {
     display: grid;
     gap: 5 !important;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
-  }
+    grid-template-columns: 1fr;
+   }
 
-  body {
-    position: relative;
-  }
-
-  .translate {
-    transform: translate(-6rem, -0px) !important;
-  }
-
-  h1 {
-    transform: translate(10rem, 3rem) !important;
-    margin-top: 2rem !important;
-    margin-bottom: 15rem !important;
-    min-width: 1000px !important;
-  }
+  
+body{
+  position: relative; 
+  
 }
 
+
+
+.project-card{
+  transform: translate(-17rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(42.3rem, 7rem) !important;
+min-width: 800px !important;
+
+}
+
+}
 
 @media (min-width: 2001px) and (max-width: 2200px) {
   .projects {
-    min-width: 37.5rem !important;
-    max-width: 40rem !important;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
-
-  .project-card {
-    min-width: 40rem !important;
-    max-width: 45rem !important;
-    transform: translateX(-39.5rem) translateY(-5rem) scaley(110%) !important; 
-    word-wrap: break-word !important;
-    max-width: 500px !important;
-    margin-bottom: 12rem !important;
-    padding-top: 5rem !important;
-    margin-top: 10rem !important;
-    padding-bottom: 10rem !important;
-  }
-
+  
   .grid {
     display: grid;
     gap: 5 !important;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
-  }
+    grid-template-columns: 1fr;
+   }
 
-  body {
-    position: relative;
-  }
-
-  .translate {
-    transform: translate(-6rem, -0px) !important;
-  }
-
-  h1 {
-    transform: translate(27rem, 3rem) !important;
-    margin-top: 2rem !important;
-    margin-bottom: 15rem !important;
-    min-width: 1000px !important;
-  }
+  
+body{
+  position: relative; 
+  
 }
 
+
+
+.project-card{
+  transform: translate(-14rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(49.3rem, 7rem) !important;
+min-width: 800px !important;
+
+}
+
+}
 
 @media (min-width: 2201px) and (max-width: 2400px) {
   .projects {
-    min-width: 37.5rem !important;
-    max-width: 40rem !important;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
-
-  .project-card {
-    min-width: 40rem !important;
-    max-width: 45rem !important;
-    transform: translateX(-48.5rem) translateY(-5rem) scaley(110%) !important; 
-    word-wrap: break-word !important;
-    max-width: 500px !important;
-    margin-bottom: 12rem !important;
-    padding-top: 5rem !important;
-    margin-top: 10rem !important;
-    padding-bottom: 10rem !important;
-  }
-
+  
   .grid {
     display: grid;
     gap: 5 !important;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
-  }
+    grid-template-columns: 1fr;
+   }
 
-  body {
-    position: relative;
-  }
-
-  .translate {
-    transform: translate(-6rem, -0px) !important;
-  }
-
-  h1 {
-    transform: translate(10rem, 3rem) !important;
-    margin-top: 2rem !important;
-    margin-bottom: 15rem !important;
-    min-width: 1500px !important;
-  }
+  
+body{
+  position: relative; 
+  
 }
 
 
+
+.project-card{
+  transform: translate(-11rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(60.3rem, 7rem) !important;
+min-width: 800px !important;
+
+}
+
+}
+
 @media (min-width: 2401px) and (max-width: 2600px) {
   .projects {
-    min-width: 37.5rem !important;
-    max-width: 40rem !important;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive columns */
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
-
-  .project-card {
-    min-width: 40rem !important;
-    max-width: 45rem !important;
-    transform: translateX(-48.5rem) translateY(-5rem) scaley(110%) !important; 
-    word-wrap: break-word !important;
-    max-width: 500px !important;
-    margin-bottom: 12rem !important;
-    padding-top: 5rem !important;
-    margin-top: 10rem !important;
-    padding-bottom: 10rem !important;
-  }
-
+  
   .grid {
     display: grid;
     gap: 5 !important;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*  Allow grid to make 2 columns */
-  }
+    grid-template-columns: 1fr;
+   }
 
-  body {
-    position: relative;
-  }
+  
+body{
+  position: relative; 
+  
+}
 
-  .translate {
-    transform: translate(-6rem, -0px) !important;
-  }
 
-  h1 {
-    transform: translate(20rem, 3rem) !important;
-    margin-top: 2rem !important;
-    margin-bottom: 15rem !important;
-    min-width: 1500px !important;
+
+.project-card{
+  transform: translate(-11rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(66.3rem, 7rem) !important;
+min-width: 800px !important;
+
+}
+
+}
+
+@media (min-width: 2601px) and (max-width: 2800px) {
+  .projects {
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
   }
+  
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: 1fr;
+   }
+
+  
+body{
+  position: relative; 
+  
+}
+
+
+
+.project-card{
+  transform: translate(-11rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(74.3rem, 7rem) !important;
+min-width: 800px !important;
+
+}
+
+}
+
+
+@media (min-width: 2801px) and (max-width: 3000px) {
+  .projects {
+ 
+min-width: 37.5rem !important; 
+max-width: 40rem !important;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 5 !important;
+    grid-template-columns: 1fr;
+   }
+
+  
+body{
+  position: relative; 
+  
+}
+
+
+
+.project-card{
+  transform: translate(-11rem, -11rem)  !important;
+  word-wrap: break-word !important;
+
+  margin-bottom: 3rem !important;
+  min-width: 33rem !important; 
+  max-width: 50rem !important;
+
+}
+
+.translate{
+  transform: translate(2rem, -0px) !important;
+}
+
+h1{
+  transform: translate(80.3rem, 7rem) !important;
+min-width: 800px !important;
+
+}
+
 }

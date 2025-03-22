@@ -24,7 +24,7 @@ export default async function Home() {
 
   return (
     <>
-      <Nav />
+
       <div className="relative">
         <main className="mx-auto p-4">
           <section className="projects">
@@ -46,8 +46,8 @@ export default async function Home() {
   md:grid-cols-1
   lg:grid-cols-1
   xl:grid-cols-1
-  2xl:grid-cols-2 left-[11rem] max-w-[50vw]
-  4xl:grid-cols-2
+  2xl:grid-cols-2 left-[11rem] max-w-[50vw] top-[10rem] gap-[5rem]
+  4xl:grid-cols-2 gap-[20rem]
   min-w-[100vw] left-[30vw]
   5xl:grid-cols-2
    max-w-[60vw] left-[-35vw]
