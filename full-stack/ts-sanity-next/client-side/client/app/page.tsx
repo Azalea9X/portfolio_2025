@@ -24,7 +24,7 @@ export default async function Home() {
 
   return (
     <>
-<Nav />
+
       <div className="relative">
         <main className="mx-auto p-4">
           <section className="projects">
