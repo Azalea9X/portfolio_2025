@@ -56,13 +56,13 @@ export default async function Home() {
               {projects.map((project: any) => (
                 <div key={project._id} className="project-card prose prose-md relative
                 xxs:left-[-9rem] top-[-5rem]
-                xs:left-[-6rem] top-[-3rem]
-                sm:left-[-11rem] min-w-[95vw] top-[-6rem] max-w-[500px]
+                xs:left-[-2rem] top-[-3rem]
+                sm:left-[-2rem] min-w-[95vw] top-[-6rem] max-w-[500px]
                 md:left-[-5rem] top-[-6rem] min-w-[95vw] max-w-[600px]
                 lg:left-[-2rem] min-w-[95vw] max-w-[900px]
-                xl:left-[-1.5rem] min-w-[105vw] max-w-[900px]
-                2xl: max-w-[15vw] left-[-26rem] top-[5rem]
-                3xl:left-[-2.5rem] min-w-[140% !important]
+                xl:left-[3.5rem] min-w-[105vw] max-w-[900px]
+                2xl: max-w-[350px] left-[-26rem] top-[400px]
+                3xl:left-[-4.5rem] min-w-[400px !important]
               
                 ">
                   <h2 className="text-2xl extra-bold relative left-[">{project.title}</h2>
