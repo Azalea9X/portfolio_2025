@@ -184,6 +184,8 @@
     .project-card{
         left: 28rem !important;
         top: 25rem !important;
+
+
         position: relative !important;
         min-width: 1600px !important; 
         max-width: 1900px !important;
