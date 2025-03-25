@@ -2,44 +2,42 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation'
-import { getPages } from "@/app/components/schemaTypes/sanity-utils";
+import { getPages } from "@/app/components/schemaTypes/sanity-utils";  // Keep using getPages to populate the menu
 
 const Nav = () => {
   const router = useRouter();
   const [pages, setPages] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Add loading state
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchPages = async () => {
-      setIsLoading(true); // Start loading
+      setIsLoading(true);
       try {
-        const pagesData: any = await getPages();
+        const pagesData:any = await getPages(); //Fetch all the pages
         setPages(pagesData);
       } catch (error) {
         console.error("Error fetching pages:", error);
-        // Handle error appropriately, e.g., display an error message.  Consider a more user-friendly error display.
       } finally {
-        setIsLoading(false); // Stop loading regardless of success/failure
+        setIsLoading(false);
       }
     };
 
     fetchPages();
   }, []);
 
-  // Function to navigate to a page based on its slug
   const handleNavigation = (slug: string) => {
-    router.push(`/pages/${slug}`);
+    router.push(`/pages/${slug}`);  // Navigate to the dynamic route
   };
 
   if (isLoading) {
-    return <div>Loading navigation...</div>; // Or a more sophisticated loading indicator
+    return <div>Loading navigation...</div>;
   }
 
   return (
     <nav className="font-extrabold relative bg-black d-flex justify-content-between text-white
       xs:top-[-5.25rem] left-[-1.35rem] my-[6rem] max-w-[120%] min-w-[110%]
       sm:left-[-2rem]
-      md:justify-content-center top-[-1.5rem]
+      md:justify-content-center top-[5.5rem]
       lg:justify-content-center min-w-[120%]
       xl:justify-content-between
       2xl:justify-content-around

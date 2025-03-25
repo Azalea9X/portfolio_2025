@@ -1,0 +1,256 @@
+@media screen and (min-width:900px) and (max-width: 1300px){
+    nav{
+        display: flex !important; 
+        flex-wrap: wrap !important;
+        transform: translateX(-2rem) scaleX(93%) !important;
+        align-items: center !important;
+        max-width: 100vw !important;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(1.8rem) !important;
+       min-width: 500px !important;
+        max-width: 700px !important;
+        justify-content: space-around;
+        margin-bottom: 15rem !important;
+    }
+
+    .project-card{
+        left: 7.5rem !important;
+        position: relative !important;
+        min-width: 500px !important; 
+        max-width: 700px !important;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2.2rem) !important;
+       min-width: 700px !important;
+        max-width: 900px !important;
+        justify-content: space-around;
+        margin-bottom: 8rem !important;
+    }
+
+    .project-card{
+        left: 9.5rem !important;
+        
+        position: relative !important;
+        min-width: 700px !important; 
+        max-width: 900px !important;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2.9rem) !important;
+       min-width: 900px !important;
+        max-width: 1100px !important;
+        justify-content: space-around;
+        margin-bottom: 8rem !important;
+    }
+
+    .project-card{
+        left:9rem !important;
+        
+        position: relative !important;
+        min-width: 600px !important; 
+        max-width: 800px !important;
+    }
+}
+ 
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2.2rem) !important;
+       min-width: 900px !important;
+        max-width: 1100px !important;
+        justify-content: space-around;
+        margin-bottom: 8rem !important;
+    }
+
+    .project-card{
+        left:26rem !important;
+        
+        position: relative !important;
+        min-width: 700px !important; 
+        max-width: 900px !important;
+    }
+}
+ 
+
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+    .project-card{
+        left: 20.5rem !important;
+        top: 35rem !important;
+        position: relative !important;
+        min-width: 900px !important;
+        max-width: 1300px !important;
+    }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+    .project-card{
+        left: 28.8rem !important;
+        top: 25rem !important;
+        position: relative !important;
+        min-width: 1000px !important;
+        max-width: 1200px !important;
+    }
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2rem) !important;
+       min-width: 1300px !important;
+        max-width: 1500px !important;
+        justify-content: space-around;
+        margin-bottom: 8rem !important;
+    }
+
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1700px) {
+    .project-card{
+        left: 31.5rem !important;
+        top: 25rem !important;
+        position: relative !important;
+        min-width: 900px !important;
+        max-width: 1400px !important;
+    }
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2rem) !important;
+       min-width: 1500px !important;
+        max-width: 1700px !important;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1701px) and (max-width: 1900px) {
+    .project-card{
+        left: 27.8rem !important;
+        top: 25rem !important;
+        position: relative !important;
+        min-width: 900px !important;
+        max-width: 1600px !important;
+    }
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2rem) !important;
+       min-width: 1700px !important;
+        max-width: 1900px !important;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1901px) and (max-width: 2100px) {
+    .project-card{
+        left: 32rem !important;
+        top: 25rem !important;
+        position: relative !important;
+        min-width: 900px !important;
+        max-width: 1800px !important;
+    }
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2rem) !important;
+       min-width: 1900px !important;
+        max-width: 2100px !important;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 2101px) and (max-width: 2300px) {
+    .project-card{
+        left: 28rem !important;
+        top: 25rem !important;
+        position: relative !important;
+        min-width: 1600px !important; 
+        max-width: 1900px !important;
+        word-break: break-word !important;overflow-x: auto;
+    }
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2rem) !important;
+       min-width: 2100px !important;
+        max-width: 2300px !important;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (min-width: 2301px) and (max-width: 2500px) {
+    .project-card{
+        left: 24rem !important;
+        top: 25rem !important;
+        position: relative !important;
+        min-width: 1800px !important;
+        max-width: 2200px !important;
+    }
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2rem) !important;
+       min-width: 2300px !important;
+        max-width: 2500px !important;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 2501px) and (max-width: 2700px) {
+    .project-card{
+        left: 25rem !important;
+        top: 25rem !important;
+        position: relative !important;
+        max-width: 2400px !important;
+    }
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2.3rem) !important;
+       min-width: 2500px !important;
+        max-width: 2700px !important;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 2701px) and (max-width: 2900px) {
+    .project-card{
+        left: 39.5rem !important;
+        top: 28rem !important;
+        position: relative !important;
+        max-width: 2900px !important;
+    }
+
+    nav{
+        display: flex !important; 
+        
+        transform: translateX(2.9rem) !important;
+       min-width: 2700px !important;
+        max-width: 2900px !important;
+        justify-content: space-around;
+    }
+}

@@ -24,7 +24,7 @@ export default async function Home() {
 
   return (
     <>
-
+<Nav/>
       <div className="relative">
         <main className="mx-auto p-4">
           <section className="projects">
@@ -33,7 +33,7 @@ export default async function Home() {
                   xxs:text-2xl left-[-3rem] top-[-5rem]
                   xs:top-[-9rem]
                   sm:text-5xl left-[11rem]
-                  md:text-4xl left-[7rem] top-[-1rem]
+                  md:text-4xl left-[7rem] top-[-9rem] mb-[3rem]
                   lg:text-5xl left-[-6rem] 
                   xl:text-6xl left-[2rem]
                   2xl:text-6xl left-[8rem]
@@ -58,7 +58,7 @@ export default async function Home() {
                 xxs:left-[-9rem] top-[-5rem]
                 xs:left-[-2rem] top-[-3rem]
                 sm:left-[-2rem] min-w-[95vw] top-[-6rem] max-w-[500px]
-                md:left-[-5rem] top-[-6rem] min-w-[95vw] max-w-[600px]
+                md:left-[-0rem] top-[-8rem] min-w-[95vw] max-w-[600px]
                 lg:left-[-2rem] min-w-[95vw] max-w-[900px]
                 xl:left-[3.5rem] min-w-[105vw] max-w-[900px]
                 2xl: max-w-[350px] left-[-26rem] top-[400px]

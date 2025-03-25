@@ -130,16 +130,16 @@ body{
 
 
 .project-card{
-  transform: translate(-4.5rem, -13rem) !important;
+  transform: translate(-7.5rem, -37rem) !important;
   word-wrap: break-word !important;
   max-width:max-content;
 }
 
 nav{
-  transform: translate(1.3rem, 0rem) !important;
+  transform: translate(1.3rem, 0rem) scaleY(80%) !important;
 }
 h1{
-  transform: translate(-13rem, 8rem) !important;
+  transform: translate(-13rem, 2rem) !important;
 }
 }
 
@@ -167,7 +167,7 @@ body{
 
 
 .project-card{
-  transform: translate(-0rem, -13rem) !important;
+  transform: translate(-8rem, -32rem) !important;
   word-wrap: break-word !important;
   min-width: 80vw !important;
   max-width:400px !important;
@@ -177,8 +177,8 @@ nav{
   transform: translate(1.3rem, 0rem) !important;
 }
 h1{
-  transform: translate(-4rem, 9rem) !important;
-  max-width: 400px !important;
+  transform: translate(-7rem, 5rem) !important;
+  min-width: 400px !important;
 }
 }
 
@@ -211,7 +211,7 @@ body{
 
 
 .project-card{
-  transform: translate(-6rem, -14rem)  !important;
+  transform: translate(-10rem, -30rem)  !important;
   word-wrap: break-word !important;
   max-width:max-content;
   margin-bottom: 3rem !important;
@@ -222,7 +222,7 @@ body{
 }
 
 h1{
-  transform: translate(-8.3rem, 7rem) !important;
+  transform: translate(-8.3rem, 4rem) !important;
 }
 
 }
@@ -256,7 +256,7 @@ body{
 
 
 .project-card{
-  transform: translate(-8rem, -14rem)  !important;
+  transform: translate(-8rem, -32rem)  !important;
   word-wrap: break-word !important;
   max-width:600px !important;
   margin-bottom: 3rem !important;
@@ -266,10 +266,24 @@ body{
   transform: translate(2rem, -0px) !important;
 }
 
+
 h1{
   transform: translate(-2.3rem, 7rem) !important;
+  margin-bottom: 4rem !important;
 }
 
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+nav ul li a {
+  position: relative !important; 
+  left: -5rem !important;
+}
 }
 
 
@@ -295,12 +309,12 @@ body{
 
 
 .project-card{
-  transform: translate(-6rem, -14rem)  !important;
+  transform: translate(-19.5rem, -36rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
   min-width: 33rem !important; 
-  max-width: 50rem !important;
+  max-width: 55rem !important;
 
 }
 
@@ -309,7 +323,13 @@ body{
 }
 
 h1{
-  transform: translate(8.3rem, 7rem) !important;
+  transform: translate(-1.3rem, 7rem) !important; min-width: 900px !important;
+}
+
+nav{
+  display: flex !important; 
+  justify-content: space-evenly !important;
+
 }
 
 }
@@ -337,24 +357,27 @@ body{
 
 
 .project-card{
-  transform: translate(-18rem, -11rem)  !important;
+  transform: translate(-21rem, -31rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
   min-width: 33rem !important; 
-  max-width: 50rem !important;
+  max-width: 45rem !important;
 
 }
 
 .translate{
   transform: translate(2rem, -0px) !important;
+  
 }
 
 h1{
-  transform: translate(17.3rem, 7rem) !important;
+transform: translate(2rem, 2rem) scale(1) !important;
+min-width: 1000px !important;
 }
 
 }
+
 
 @media (min-width: 1401px) and (max-width: 1600px) {
   .projects {
@@ -378,26 +401,27 @@ body{
 
 
 .project-card{
-  transform: translate(-13rem, -11rem)  !important;
+  transform: translate(-25rem, -31rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
   min-width: 33rem !important; 
-  max-width: 50rem !important;
+  max-width: 45rem !important;
 
 }
 
 .translate{
   transform: translate(2rem, -0px) !important;
+  
 }
 
 h1{
-  transform: translate(24.3rem, 7rem) !important;
-min-width: 800px !important;
-
+transform: translate(2rem, 2rem) scale(1) !important;
+min-width: 1000px !important;
 }
 
 }
+
 
 @media (min-width: 1601px) and (max-width: 1800px) {
   .projects {
@@ -421,23 +445,23 @@ body{
 
 
 .project-card{
-  transform: translate(-14rem, -11rem)  !important;
+  transform: translate(-27rem, -31rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
   min-width: 33rem !important; 
-  max-width: 50rem !important;
+  max-width: 45rem !important;
 
 }
 
 .translate{
   transform: translate(2rem, -0px) !important;
+  
 }
 
 h1{
-  transform: translate(40.3rem, 7rem) !important;
-min-width: 800px !important;
-
+transform: translate(2rem, 2rem) scale(1) !important;
+min-width: 1000px !important;
 }
 
 }
@@ -464,23 +488,23 @@ body{
 
 
 .project-card{
-  transform: translate(-17rem, -11rem)  !important;
+  transform: translate(-27rem, -31rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
   min-width: 33rem !important; 
-  max-width: 50rem !important;
+  max-width: 45rem !important;
 
 }
 
 .translate{
   transform: translate(2rem, -0px) !important;
+  
 }
 
 h1{
-  transform: translate(42.3rem, 7rem) !important;
-min-width: 800px !important;
-
+transform: translate(19rem, 2rem) scale(1) !important;
+min-width: 1000px !important;
 }
 
 }
@@ -507,26 +531,27 @@ body{
 
 
 .project-card{
-  transform: translate(-14rem, -11rem)  !important;
+  transform: translate(-29rem, -31rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
   min-width: 33rem !important; 
-  max-width: 50rem !important;
+  max-width: 45rem !important;
 
 }
 
 .translate{
   transform: translate(2rem, -0px) !important;
+  
 }
 
 h1{
-  transform: translate(49.3rem, 7rem) !important;
-min-width: 800px !important;
-
+transform: translate(19rem, 2rem) scale(1) !important;
+min-width: 1000px !important;
 }
 
 }
+
 
 @media (min-width: 2201px) and (max-width: 2400px) {
   .projects {
@@ -550,7 +575,7 @@ body{
 
 
 .project-card{
-  transform: translate(-11rem, -11rem)  !important;
+  transform: translate(-18rem, -31rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
@@ -561,12 +586,12 @@ body{
 
 .translate{
   transform: translate(2rem, -0px) !important;
+  
 }
 
 h1{
-  transform: translate(60.3rem, 7rem) !important;
-min-width: 800px !important;
-
+transform: translate(29rem, 2rem) scale(1) !important;
+min-width: 1400px !important;
 }
 
 }
@@ -593,7 +618,7 @@ body{
 
 
 .project-card{
-  transform: translate(-11rem, -11rem)  !important;
+  transform: translate(-18rem, -31rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
@@ -604,12 +629,12 @@ body{
 
 .translate{
   transform: translate(2rem, -0px) !important;
+  
 }
 
 h1{
-  transform: translate(66.3rem, 7rem) !important;
-min-width: 800px !important;
-
+transform: translate(38rem, 2rem) scale(1) !important;
+min-width: 1400px !important;
 }
 
 }
@@ -636,67 +661,29 @@ body{
 
 
 .project-card{
-  transform: translate(-11rem, -11rem)  !important;
+  transform: translate(-38rem, -31rem)  !important;
   word-wrap: break-word !important;
 
   margin-bottom: 3rem !important;
   min-width: 33rem !important; 
-  max-width: 50rem !important;
+  max-width: 60rem !important;
 
 }
 
 .translate{
   transform: translate(2rem, -0px) !important;
+  
 }
 
 h1{
-  transform: translate(74.3rem, 7rem) !important;
-min-width: 800px !important;
-
+transform: translate(22rem, 2rem) scale(1) !important;
+min-width: 1800px !important;
 }
 
+nav{
+  min-width: 2800px !important; 
+  display: flex !important; 
+  justify-content: space-around !important;
+ max-width: 2750px !important;
 }
-
-
-@media (min-width: 2801px) and (max-width: 3000px) {
-  .projects {
- 
-min-width: 37.5rem !important; 
-max-width: 40rem !important;
-  }
-  
-  .grid {
-    display: grid;
-    gap: 5 !important;
-    grid-template-columns: 1fr;
-   }
-
-  
-body{
-  position: relative; 
-  
-}
-
-
-
-.project-card{
-  transform: translate(-11rem, -11rem)  !important;
-  word-wrap: break-word !important;
-
-  margin-bottom: 3rem !important;
-  min-width: 33rem !important; 
-  max-width: 50rem !important;
-
-}
-
-.translate{
-  transform: translate(2rem, -0px) !important;
-}
-
-h1{
-  transform: translate(80.3rem, 7rem) !important;
-min-width: 800px !important;
-
-}
-
 }

@@ -2,7 +2,7 @@ import { getPage } from "@/app/components/schemaTypes/sanity-utils";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import Nav from "@/app/navbar";
-import "./../../../app/projects.css";
+import "@/app/pages.css";
 type Props = {
   params: {
     project: string;
@@ -30,14 +30,20 @@ export default async function Project({ params }: any) {
     }
 
     return (
-      <div className="project-card prose prose-md relative
+      <>   <Nav />
+          <div className="project-card prose prose-md relative
 xs:min-w-[400px] max-w-[450px] 
-left-[-3vw]
-sm: left:-[-2rem]
+left-[7rem] top-[29rem]
 
+sm:left-[11rem] top-[26rem]
+
+md:left-[14rem] top-[22rem]
+lg:left-[17rem] top-[19rem]
+xl:
+    left-[40rem] top-[24rem] max-w-[600px]
 
       ">
-        <Nav />
+       
         <h2 className="text-2xl extra-bold">{page.title}</h2>
         <PortableText
           value={page.content}
@@ -73,7 +79,8 @@ sm: left:-[-2rem]
           />
         )}
       </div>
-    );
+      </>
+)
   } catch (error:any | unknown) {
     console.error(error);
     return <div>Error: {error.message}</div>;
