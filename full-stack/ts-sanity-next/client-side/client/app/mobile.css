@@ -126,13 +126,13 @@ body{
 
 
 .project-card{
-  transform: translate(-7.5rem, -37rem) !important;
+  transform: translate(-13.5rem, -37rem) !important;
   word-wrap: break-word !important;
   max-width:max-content;
 }
 
 nav{
-  transform: translate(1.3rem, 0rem) scaleY(80%) !important;
+  transform: translate(-2rem, 0rem) scaleY(80%) !important;
 }
 h1{
   transform: translate(-13rem, 2rem) !important;
