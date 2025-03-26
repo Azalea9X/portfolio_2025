@@ -102,7 +102,7 @@ html, body {
   
   /* Small devices (sm: breakpoint in Tailwind, ~640px) */
 
-  @media (min-width: 300px )  {
+  @media (min-width: 300px )  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1)  {
     .projects {
   
   max-width: 100vh !important;
@@ -132,7 +132,7 @@ html, body {
   
   /*For extra small screens 
   400px and 600px*/
- @media screen and (min-width:25rem) and (max-width:37.5rem) {
+ @media screen and (min-width:25rem) and (max-width:37.5rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         transform: translate(20%, -10%) !important;
         word-wrap: break-word;
@@ -149,7 +149,7 @@ html, body {
 }
 
 /* For small screens 600px and 750px */
-@media screen and (min-width:37.56rem) and (max-width:46.875rem) {
+@media screen and (min-width:37.56rem) and (max-width:46.875rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         transform: translate(-32%, -5%) !important;
         word-wrap: break-word;
@@ -166,7 +166,7 @@ html, body {
 }
 
 /* For medium screens 751px and 902px */
-@media screen and (min-width:46.9375rem) and (max-width:53.125rem) {
+@media screen and (min-width:46.9375rem) and (max-width:53.125rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
  transform: translate(-27%, 2rem) !important;
         word-wrap: break-word;
@@ -185,7 +185,7 @@ html, body {
 }
 
 /* For large screens 850px and 950px */
-@media screen and (min-width:53.125rem) and (max-width:59.375rem) {
+@media screen and (min-width:53.125rem) and (max-width:59.375rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
  transform: translate(-18vw, 5rem) !important;
         word-wrap: break-word;
@@ -204,7 +204,7 @@ html, body {
 }
 
 /* For larger screens 950px approx and 1050px */
-@media screen and (min-width:59.3751rem) and (max-width:65.625rem) {
+@media screen and (min-width:59.3751rem) and (max-width:65.625rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
  transform: translate(-10.5rem, 10rem) !important;
         word-wrap: break-word;
@@ -221,7 +221,7 @@ html, body {
 }
 
 /* For larger screens 1051px and 1160px */
-@media screen and (min-width:65.626rem) and (max-width:72.5rem) {
+@media screen and (min-width:65.626rem) and (max-width:72.5rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
 
         word-wrap: break-word;
@@ -241,7 +241,7 @@ html, body {
 }
 
 /* For larger screens 1160px and 1360*/
-@media screen and (min-width:72.61rem) and (max-width:85rem) {
+@media screen and (min-width:72.61rem) and (max-width:85rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
    .project-card{
 
        word-wrap: break-word;
@@ -261,7 +261,7 @@ nav{
 }
 
 /* For larger screens 1360px and 1560*/
-@media screen and (min-width:85.1rem) and (max-width:97.5rem) {
+@media screen and (min-width:85.1rem) and (max-width:97.5rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
    .project-card{
 
        word-wrap: break-word;
@@ -281,7 +281,7 @@ nav{
 }
 
 /* For larger screens 1560px and 1760*/
-@media screen and (min-width:97.6rem) and (max-width:110rem) {
+@media screen and (min-width:97.6rem) and (max-width:110rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
    .project-card{
 
        word-wrap: break-word;
@@ -301,7 +301,7 @@ nav{
 }
 
 /* For larger screens 1760px and 1960*/
-@media screen and (min-width:110.1rem) and (max-width:122.5rem) {
+@media screen and (min-width:110.1rem) and (max-width:122.5rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
    .project-card{
 
        word-wrap: break-word;
@@ -321,7 +321,7 @@ nav{
 }
 
 /* For larger screens 1960px and 2161*/
-@media screen and (min-width:122.6rem) and (max-width:135.0625rem) {
+@media screen and (min-width:122.6rem) and (max-width:135.0625rem)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
    .project-card{
 
        word-wrap: break-word;

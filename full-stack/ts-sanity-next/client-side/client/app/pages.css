@@ -1,4 +1,4 @@
-@media screen and (min-width:900px) and (max-width: 1300px){
+@media screen and (min-width:900px) and (max-width: 1300px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     nav{
         display: flex !important; 
         flex-wrap: wrap !important;
@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 700px) {
+@media screen and (min-width: 500px) and (max-width: 700px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
 
     nav{
         display: flex !important; 
@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 900px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
 
     nav{
         display: flex !important; 
@@ -50,7 +50,7 @@
     }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1000px) {
+@media screen and (min-width: 901px) and (max-width: 1000px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
 
     nav{
         display: flex !important; 
@@ -71,7 +71,7 @@
     }
 }
  
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
+@media screen and (min-width: 1000px) and (max-width: 1100px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
 
     nav{
         display: flex !important; 
@@ -93,7 +93,7 @@
 }
  
 
-@media screen and (min-width: 1101px) and (max-width: 1300px) {
+@media screen and (min-width: 1101px) and (max-width: 1300px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 20.5rem !important;
         top: 35rem !important;
@@ -103,7 +103,7 @@
     }
 }
 
-@media screen and (min-width: 1301px) and (max-width: 1500px) {
+@media screen and (min-width: 1301px) and (max-width: 1500px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 28.8rem !important;
         top: 25rem !important;
@@ -124,7 +124,7 @@
 
 }
 
-@media screen and (min-width: 1501px) and (max-width: 1700px) {
+@media screen and (min-width: 1501px) and (max-width: 1700px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 31.5rem !important;
         top: 25rem !important;
@@ -143,7 +143,7 @@
     }
 }
 
-@media screen and (min-width: 1701px) and (max-width: 1900px) {
+@media screen and (min-width: 1701px) and (max-width: 1900px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 27.8rem !important;
         top: 25rem !important;
@@ -161,7 +161,7 @@
     }
 }
 
-@media screen and (min-width: 1901px) and (max-width: 2100px) {
+@media screen and (min-width: 1901px) and (max-width: 2100px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 32rem !important;
         top: 25rem !important;
@@ -180,7 +180,7 @@
     }
 }
 
-@media screen and (min-width: 2101px) and (max-width: 2300px) {
+@media screen and (min-width: 2101px) and (max-width: 2300px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 28rem !important;
         top: 25rem !important;
@@ -203,7 +203,7 @@
 }
 
 
-@media screen and (min-width: 2301px) and (max-width: 2500px) {
+@media screen and (min-width: 2301px) and (max-width: 2500px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 24rem !important;
         top: 25rem !important;
@@ -222,7 +222,7 @@
     }
 }
 
-@media screen and (min-width: 2501px) and (max-width: 2700px) {
+@media screen and (min-width: 2501px) and (max-width: 2700px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 25rem !important;
         top: 25rem !important;
@@ -240,7 +240,7 @@
     }
 }
 
-@media screen and (min-width: 2701px) and (max-width: 2900px) {
+@media screen and (min-width: 2701px) and (max-width: 2900px)  and (-o-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1){
     .project-card{
         left: 39.5rem !important;
         top: 28rem !important;
